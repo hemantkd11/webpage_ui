@@ -27,7 +27,8 @@ const VegaPay = () => {
                 background: " #ffffff",
                 color: " #36285B",
                 borderRadius: "1px",
-                zIndex: '0px',
+                position:'unset'
+          
               }}
              onClick={()=>setModal(true)}
               variant="contained"

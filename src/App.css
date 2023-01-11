@@ -23,7 +23,7 @@
   width: 100%;
   flex: 1;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   .Header_Banner {
     width: 100%;
     height: 500px;
@@ -36,13 +36,11 @@
     align-items: center;
     justify-content: center;
   }
-}
-
-@media screen and (max-width: 700) {
   .mobile.logo {
     width: 100px;
   }
 }
+
 .conatiner-box {
   width: 50%;
   display: flex;
@@ -52,7 +50,7 @@
 .Header-text {
   font-size: 36px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   .Header-text {
     font-size: 20px;
   }
@@ -60,7 +58,7 @@
 .text-body {
   font-size: 15px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   .text-body {
     font-size: 10px;
   }
@@ -414,11 +412,10 @@ input {
 
 /*slider*/
 .slider-container {
-  position: relative;
   overflow: hidden;
+  position: relative;
   padding: 26px;
   color: black;
-  z-index: 1;
 }
 .image-container {
   padding: 0 10px;

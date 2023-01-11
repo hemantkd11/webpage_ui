@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
 import Footer from "./components/footer/Footer";
-import NavBar from "./components/navigationBar/NavBar";
+import { Slide } from "react-slideshow-image";
+import 'react-slideshow-image/dist/style.css'
 import VegaPay from "./components/VegaPlatform/VegaPay";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import VegaCompany from "./components/companyVega/CompanyVega";
@@ -16,7 +17,6 @@ function App() {
       <Router>
         <Nav />
         <VegaModal />
-        {/* <NavBar /> */}
         <Routes>
           <Route path="/" element={<VegaPay />} />
           <Route path="/aboutcompany" element={<VegaCompany />} />
