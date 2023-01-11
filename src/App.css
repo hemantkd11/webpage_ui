@@ -116,7 +116,9 @@
 }
 
 .heading {
-  font-size: px;
+  box-sizing: border-box;
+  font-size: 25px;
+ color: #3e1f71;
 }
 
 .Vegaworks {
@@ -252,11 +254,7 @@
   display: flex;
   align-items: center;
 }
-.Flex-for-Row {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
+
 .temp {
   display: flex;
   flex: 1;
@@ -265,7 +263,7 @@
 }
 .contact-container {
   width: 100%;
-  height: 675px;
+  height: 750px;
   background: url("../public/background.png"),
     linear-gradient(95.73deg, #1f1133 4.56%, #1e1420 95.43%);
 
@@ -278,14 +276,28 @@
 }
 .contact-box {
   width: 40%;
-  height: 500px;
+  height: auto;
   padding: 0px 0 20px 0px;
   border-radius: 10px;
   display: flex;
   color: black;
-
+  padding: 20px;
   justify-content: center;
   background-color: white;
+}
+.first_lastName-box{
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+}
+.contact-box-flex{
+  display: flex;
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  gap: 10px;
+  box-sizing: border-box;
 }
 .heading-flex {
   display: flex;
@@ -298,11 +310,12 @@
   flex-direction: column;
 }
 .flex-1 {
-  width: 100%;
+  width: 50%;
   display: flex;
-
+  flex: 1;
   flex-direction: column;
 }
+
 .input-label {
   padding: 5px;
 }
@@ -310,6 +323,7 @@
   padding: 20px;
   width: 100%;
   display: flex;
+  gap:10px;
   align-items: center;
   flex-direction: column;
   flex: 1;

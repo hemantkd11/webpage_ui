@@ -4,6 +4,7 @@ import Arrow from "@mui/icons-material/ArrowForwardIos";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
 const Nav = () => {
+  
   const Navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(false);
   return (
@@ -26,7 +27,7 @@ const Nav = () => {
               <li className="list">Solutions</li>
               <li className="list">Company</li>
               <li className="list">Devlopers</li>
-              <li className="list">Contact Us</li>
+              <li className="list" onClick={()=>Navigate('./contact')} >Contact Us</li>
             </ul>
             <div></div>
           </div>

@@ -51,9 +51,9 @@ const Footer = () => {
                   <div>
                     <Button
                       sx={{
-                        width: "80%",
+                        width: "70%",
                         height: "30px",
-                        fontSize: "10px",
+                        fontSize: "7px",
                         background: " #fff",
                         color: "black",
                         borderRadius: "0",
