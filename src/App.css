@@ -1,38 +1,462 @@
-.App {
-  text-align: center;
+.container {
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-conatiner-box {
+  width: 80%;
+  display: flex;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Header_Banner {
+  width: 100%;
+  height: 675px;
+  background-color: #0f0f3b;
+  background-image: url("../public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-logo img {
+  width: 100%;
+  flex: 1;
+}
+@media only screen and (max-width: 700px) {
+  .Header_Banner {
+    width: 100%;
+    height: 500px;
+    background-color: #0f0f3b;
+    background-image: url("../public/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (max-width: 700) {
+  .mobile.logo {
+    width: 100px;
+  }
+}
+.conatiner-box {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Header-text {
+  font-size: 36px;
+}
+@media only screen and (max-width: 700px) {
+  .Header-text {
+    font-size: 20px;
+  }
+}
+.text-body {
+  font-size: 15px;
+}
+@media only screen and (max-width: 700px) {
+  .text-body {
+    font-size: 10px;
+  }
+}
+.logo-box {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+.header_btn {
+  padding: 10px;
+  border-radius: 0;
+}
+.text-comp {
+  width: 100%;
+
+  flex: 1;
+}
+.container_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: "center";
+  background: linear-gradient(90deg, #d3e4ec 0.23%, #ffff 104.44%);
+}
+
+.container_box_main {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  width: 80%;
+}
+.text_header {
+  padding: 12px;
+  color: #414198;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+.text_body {
+  padding: 10px 0px 25px 0px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  color: #656565;
+}
+
+.heading {
+  font-size: px;
+}
+
+.Vegaworks {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.VegaWork_Container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 500px;
+
+  background-size: 400px 500px;
+}
+.vega_works_logo {
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  padding: 10px;
+}
+.vega_works_details {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.VegaWorks_heading {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.work-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vega_works_logo img {
+  width: 65%;
+}
+@media only screen and (max-width: 800px) {
+  .vega_works_logo img {
+    width: 120%;
+  }
+}
+.company-text {
+  display: flex;
+  padding: 15px;
+  gap: 20px;
+}
+.container-company {
+  width: 80%;
+  display: flex;
+
+  flex-direction: column;
+  background: #ffffff;
+  justify-content: center;
+  height: 500px;
+}
+
+.flex-box {
+  width: 50%;
+}
+.company_header {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Vegacompany {
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+}
+.Vega-company-text {
+  font-size: 1rem;
+}
+.vegacompany-header {
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  color: #414198;
+}
+
+.VegaContact {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    95.63deg,
+    #090909 -15.6%,
+    #3e1f71 65.54%,
+    #242424 127.85%
+  );
+}
+.contact-info {
+  width: 80%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  background: url("../public/contact_design.png"),
+    linear-gradient(91.38deg, #ffffff 1.18%, #d8daff 100%);
+
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.contact-box-temp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+.contact-email-logo {
+  width: 30%;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.email-logo {
+  display: flex;
+  align-items: center;
+}
+.Flex-for-Row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.temp {
+  display: flex;
+  flex: 1;
+  font-size: 20px;
+  justify-content: center;
+}
+.contact-container {
+  width: 100%;
+  height: 675px;
+  background: url("../public/background.png"),
+    linear-gradient(95.73deg, #1f1133 4.56%, #1e1420 95.43%);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-box {
+  width: 40%;
+  height: 500px;
+  padding: 0px 0 20px 0px;
+  border-radius: 10px;
+  display: flex;
+  color: black;
+
+  justify-content: center;
+  background-color: white;
+}
+.heading-flex {
+  display: flex;
+  align-items: center;
+}
+.flex {
+  width: 100%;
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+}
+.flex-1 {
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+}
+.input-label {
+  padding: 5px;
+}
+.form {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid lightgray;
+}
+.Sign-in-btn {
+  padding: 10px;
+  border-radius: 6px;
+  background: #1e1236;
+  text-align: center;
+  color: white;
+}
+.vegaSubmit_btn {
+  padding-top: 15px;
+}
+.team-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.team-main-box {
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+}
+.team-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.team-img img {
+  width: 100%;
+}
+.teamImg-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.team-heading {
+  box-sizing: border-box;
+  font-size: 25px;
+  margin-bottom: 10vh;
+  color: #3e1f71;
+  font-weight: 700;
+}
+.vector-in {
+  width: 18px;
+  height: 20px;
+  text-align: center;
+  background: lightgray;
+  border-radius: 100%;
+}
+.member-name {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  justify-content: center;
+}
+.team-member {
+  display: flex;
+  flex: 1;
+}
+.social-site-logo {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+}
+.model-body {
+  display: flex;
+  width: 100%;
+  color: red;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+/*slider*/
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  padding: 26px;
+  color: black;
+  z-index: 1;
+}
+.image-container {
+  padding: 0 10px;
+  display: flex;
+  width: 100%;
+  height: 300px;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lessthen,
+.greaterthen {
+  border: none;
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.greaterthen {
+  right: 0;
+}
+
+.lessthen p,
+.greaterthen p {
+  font-size: 50px;
+  background-color: rgba(188, 179, 179, 0.436);
+  box-shadow: 0px 0px 10px 1px black;
+  border-radius: 10px;
+  color: rgb(195, 51, 51);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+.image-banner img {
+  width: 300px;
+  height: 250px;
+}
+.img-slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: rgb(27, 8, 56);
+}
+
+.img-window {
+  width: 80%;
+  display: flex;
 }

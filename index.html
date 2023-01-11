@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+
+    <body
+        style="margin: 0; padding: 0; font-family: 'Gilroy-Medium'; width:
+        100%">
+        <table cellspacing="0" cellpadding="0" width="100%" style="padding:
+            20px">
+            <tr>
+                <td
+                    style="
+                    height: 160px;
+                    background: linear-gradient(91.59deg, #302355 -1%, #513997
+                    100%);
+                    ">
+                    <!-- Statement Header start -->
+                    <table
+                        class="statement-header"
+                        cellspacing="0"
+                        cellpadding="0"
+                        width="100%">
+                        <tr>
+                            <td style="width: 50%; height: 160px; padding: 0
+                                5%">
+                                <div
+                                    style="
+                                    background-color: white;
+                                    text-transform: uppercase;
+                                    position: relative;
+                                    top: 30px;
+                                    padding: 16px 24px;
+                                    font-size: 1.2em;
+                                    text-align: center;
+                                    ">
+                                    CREDIT CARD E-STATEMENT
+                                </div>
+                            </td>
+                            <td style="width: 50%; height: 160px; padding: 0
+                                6%">
+                                <div
+                                    style="
+                                    position: relative;
+                                    top: 30px;
+                                    text-align: center;
+                                    padding: 16px 24px;
+                                    ">
+                                    <img
+                                        width="80%"
+                                        style="min-width: 280px"
+                                        src="./public/sbmbank.svg"
+                                        alt="SBM Bank"
+                                        />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- Statement Header end -->
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 20px 30px; background-color: white">
+                    <table cellspacing="0" width="100%">
+                        <tr>
+                            <td colspan="2" style="width: 50%">
+                                <div style="border: 1px solid #000000;
+                                    border-radius: 4px">
+                                    <div
+                                        style="
+                                        padding: 10px 8px;
+                                        background: linear-gradient(
+                                        91.59deg,
+                                        #302355 -1%,
+                                        #513997 100%
+                                        );
+                                        color: white;
+                                        font-size: 16px;
+                                        text-align: center;
+                                        border-radius: 4px 4px 0px 0px;
+                                        ">
+                                        Customer Name
+                                    </div>
+                                    <div
+                                        style="
+                                        border-radius: 0px 0px 4px 4px;
+                                        padding: 15px 8px;
+                                        background-color: white;
+                                        font-size: 14px;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        ">
+                                        { CUSTOMER_NAME }
+                                    </div>
+                                </div>
+                            </td>
+                            <td colspan="2" style="width: 50%">
+                                <div style="border: 1px solid #000000;
+                                    border-radius: 4px">
+                                    <div
+                                        style="
+                                        border-radius: 4px 4px 0px 0px;
+                                        padding: 10px 8px;
+                                        background-color: #513997;
+                                        color: white;
+                                        font-size: 16px;
+                                        text-align: center;
+                                        ">
+                                        Card Account No.
+                                    </div>
+                                    <div
+                                        style="
+                                        border-radius: 0px 0px 4px 4px;
+                                        padding: 15px 8px;
+                                        background-color: white;
+                                        font-size: 14px;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        ">
+                                        { CARD_ACCOUNT_NUMBER }
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding: 0px 30px; background-color: white">
+                    <table
+                        cellspacing="0"
+                        cellpadding="1px"
+                        width="100%"
+                        style="padding-top: 20px">
+                        <tr>
+                            <td width="66%">
+                                <table cellspacing="2px" cellpadding="0px"
+                                    width="100%">
+                                    <tr>
+                                        <td colspan="3" width="50%">
+                                            <div
+                                                style="border: 1px solid
+                                                #000000; border-radius: 4px">
+                                                <div
+                                                    style="
+                                                    padding: 10px 8px;
+                                                    background: #e5e7ff;
+                                                    border-bottom: 0.5px solid
+                                                    #000000;
+                                                    font-size: 16px;
+                                                    text-align: center;
+                                                    border-radius: 4px 4px 0px
+                                                    0px;
+                                                    ">
+                                                    Statement Date
+                                                </div>
+                                                <div
+                                                    style="
+                                                    border-radius: 0px 0px 4px
+                                                    4px;
+                                                    padding: 15px 8px;
+                                                    background-color: white;
+                                                    font-size: 14px;
+                                                    text-align: center;
+                                                    font-weight: bold;
+                                                    ">
+                                                    { STATEMENT_DATE }
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td colspan="3" width="50%">
+                                            <div
+                                                style="border: 1px solid
+                                                #000000; border-radius: 4px">
+                                                <div
+                                                    style="
+                                                    padding: 10px 8px;
+                                                    background: #e5e7ff;
+                                                    border-bottom: 0.5px solid
+                                                    #000000;
+                                                    font-size: 16px;
+                                                    text-align: center;
+                                                    border-radius: 4px 4px 0px
+                                                    0px;
+                                                    ">
+                                                    Minimun Amount Due
+                                                </div>
+                                                <div
+                                                    style="
+                                                    border-radius: 0px 0px 4px
+                                                    4px;
+                                                    padding: 15px 8px;
+                                                    background-color: white;
+                                                    font-size: 14px;
+                                                    text-align: center;
+                                                    font-weight: bold;
+                                                    ">
+                                                    { 123}
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="120px"
+                                            style="background-color:
+                                            #513997;border-radius: 4px; border:
+                                            1px solid black">
+
+                                            <div
+                                                style="
+                                                color: white;
+
+                                                padding: 15px 8px;
+                                                font-size: 16px;
+                                                text-align: center;
+                                                font-weight: bold;
+
+                                                ">
+                                                Statement Summary
+
+                                            </div>
+                                        </td>
+                                        <td width="16.6%">
+                                            <div
+                                                style="border: 1px solid
+                                                #000000; border-radius: 4px">
+                                                <div
+                                                    style="
+                                                    padding: 10px 8px;
+                                                    background: #e5e7ff;
+                                                    border-bottom: 0.5px solid
+                                                    #000000;
+                                                    font-size: 13px;
+                                                    text-align: center;
+                                                    border-radius: 4px 4px 0px
+                                                    0px;
+                                                    height:30px;
+                                                    ">
+                                                    Previous
+
+                                                    Balance
+                                                </div>
+                                                <div
+                                                    style="
+                                                    border-radius: 0px 0px 4px
+                                                    4px;
+                                                    padding: 15px 8px;
+                                                    background-color: white;
+                                                    font-size: 14px;
+                                                    text-align: center;
+                                                    font-weight: bold;
+                                                    height:30px;
+                                                    ">
+                                                    { 123}
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td width="16.6%">
+                                            <div
+                                                style="border: 1px solid
+                                                #000000; border-radius: 4px; ">
+                                                <div
+                                                    style="
+                                                    padding: 10px 8px;
+                                                    background: #e5e7ff;
+                                                    border-bottom: 0.5px solid
+                                                    #000000;
+                                                    font-size: 16px;
+                                                    text-align: center;
+                                                    border-radius: 4px 4px 0px
+                                                    0px;
+                                                    height:30px;
+                                                    ">
+                                                    Purchase/
+
+                                                    Charges
+                                                </div>
+                                                <div
+                                                    style="
+                                                    border-radius: 0px 0px 4px
+                                                    4px;
+                                                    padding: 15px 8px;
+                                                    background-color: white;
+                                                    font-size: 14px;
+                                                    text-align: center;
+                                                    font-weight: bold;
+                                                    height:30px;
+                                                    ">
+                                                    { 123}
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td width="16.6%">
+                                            <div
+                                                style="border: 1px solid
+                                                #000000; border-radius: 4px">
+                                                <div
+                                                    style="
+                                                    padding: 10px 8px;
+                                                    background: #e5e7ff;
+                                                    border-bottom: 0.5px solid
+                                                    #000000;
+                                                    font-size: 16px;
+                                                    text-align: center;
+                                                    border-radius: 4px 4px 0px
+                                                    0px;
+                                                    height:30px;
+                                                    ">
+                                                    Cash
+
+                                                    Advance
+                                                </div>
+                                                <div
+                                                    style="
+                                                    border-radius: 0px 0px 4px
+                                                    4px;
+                                                    padding: 15px 8px;
+                                                    background-color: white;
+                                                    font-size: 14px;
+                                                    text-align: center;
+                                                    font-weight: bold;
+                                                    height:30px;
+                                                    ">
+                                                    { 123}
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td width="16.6%">
+                                            <div
+                                                style="border: 1px solid
+                                                #000000; border-radius: 4px">
+                                                <div
+                                                    style="
+                                                    padding: 10px 8px;
+                                                    background: #e5e7ff;
+                                                    border-bottom: 0.5px solid
+                                                    #000000;
+                                                    font-size: 16px;
+                                                    text-align: center;
+                                                    border-radius: 4px 4px 0px
+                                                    0px;
+                                                    height:30px;
+                                                    ">
+                                                    Credits/
+
+                                                    Payments
+                                                </div>
+                                                <div
+                                                    style="
+                                                    border-radius: 0px 0px 4px
+                                                    4px;
+                                                    padding: 15px 8px;
+                                                    background-color: white;
+                                                    font-size: 14px;
+                                                    text-align: center;
+                                                    font-weight: bold;
+                                                    height:30px;
+                                                    ">
+                                                    { 123}
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td width="16.6%">
+                                            <div
+                                                style="border: 1px solid
+                                                #000000; border-radius: 4px">
+                                                <div
+                                                    style="
+                                                    padding: 10px 8px;
+                                                    background: #e5e7ff;
+                                                    border-bottom: 0.5px solid
+                                                    #000000;
+                                                    font-size: 16px;
+                                                    text-align: center;
+                                                    border-radius: 4px 4px 0px
+                                                    0px;
+                                                    height:30px;
+                                                    ">
+                                                    EMI
+                                                </div>
+                                                <div
+                                                    style="
+                                                    border-radius: 0px 0px 4px
+                                                    4px;
+                                                    padding: 15px 8px;
+                                                    background-color: white;
+                                                    font-size: 14px;
+                                                    text-align: center;
+                                                    font-weight: bold;
+                                                    height:30px;
+                                                    ">
+                                                    { 123}
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="120px"
+                                            style="background-color:
+                                            #513997;border-radius: 4px;border:
+                                            1px solid black">
+
+                                            <div
+                                                style="
+                                                color: white;
+
+                                                padding: 15px 8px;
+                                                font-size: 16px;
+                                                text-align: center;
+                                                font-weight: bold;
+                                                ">
+                                                Credit
+
+                                                Summary
+
+                                            </div>
+                                        </td>
+                                        <td colspan="2">
+                                            <div
+                                                style="border: 1px solid
+                                                #000000; border-radius: 4px">
+                                                <div
+                                                    style="
+                                                    padding: 10px 8px;
+                                                    background: #e5e7ff;
+                                                    border-bottom: 0.5px solid
+                                                    #000000;
+                                                    font-size: 14px;
+                                                    text-align: center;
+                                                    border-radius: 4px 4px 0px
+                                                    0px;
+                                                    ">
+                                                    Minimun Amount Due
+                                                </div>
+                                                <div
+                                                    style="
+                                                    border-radius: 0px 0px 4px
+                                                    4px;
+                                                    padding: 15px 8px;
+                                                    background-color: white;
+                                                    font-size: 12px;
+                                                    text-align: center;
+                                                    font-weight: bold;
+                                                    ">
+                                                    { 123}
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td colspan="3">
+                                            <div
+                                                style="border: 1px solid
+                                                #000000; border-radius: 4px">
+                                                <div
+                                                    style="
+                                                    padding: 10px 8px;
+                                                    background: #e5e7ff;
+                                                    border-bottom: 0.5px solid
+                                                    #000000;
+                                                    font-size: 16px;
+                                                    text-align: center;
+                                                    border-radius: 4px 4px 0px
+                                                    0px;
+                                                    ">
+                                                    Minimun Amount Due
+                                                </div>
+                                                <div
+                                                    style="
+                                                    border-radius: 0px 0px 4px
+                                                    4px;
+                                                    padding: 15px 8px;
+                                                    background-color: white;
+                                                    font-size: 14px;
+                                                    text-align: center;
+                                                    font-weight: bold;
+                                                    ">
+                                                    { 123}
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+
+                            <td width="33%" style="vertical-align: top;">
+                                <div style="border: 1px solid #000000;
+                                    border-radius: 4px; height:
+                                    288px;top:2px;position: relative;">
+                                    <div
+                                        style="
+                                        padding: 10px 8px;
+                                        background: #513997;
+                                        border-bottom: 0.5px solid #000000;
+                                        color: white;
+                                        font-size: 16px;
+                                        text-align: center;
+                                        border-radius: 4px 4px 0px 0px;
+                                        ">
+                                        Total Amount Due
+                                    </div>
+                                    <div
+                                        style="border-radius: 0px 0px 4px 4px;
+                                        padding: 56px 20px;
+                                        background-color: white;
+                                        font-size: 20px;
+                                        text-align: center;
+                                        font-weight: bold;
+
+                                        vertical-align: middle;
+                                        ">
+                                        {TOTAL_AMOUNT_DUE}
+                                    </div>
+                                    <div
+                                        style="
+                                        height:100px;
+                                        ">
+                                        <div style="padding:10px;">
+                                            <div style="width:49%; display:
+                                                inline-block; font-size: 16px;
+                                                font-weight: 600;">Due
+                                                Date</div><div
+                                                style="width:50%; float:right;
+                                                display:inline-block;font-size:
+                                                16px;font-weight: 600;
+                                                text-align: right;">12
+                                                Dec
+                                                2022
+                                            </div>
+                                        </div>
+                                        <div style="padding:10px;">
+                                            Interest shall be levied if the
+                                            total
+
+                                            amount due is not paid
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 0px 30px; background-color: white">
+                    <table cellspacing="0"
+                        cellpadding="1px"
+                        width="100%">
+                        <tr>
+                            <td
+                                style="background-color:
+                                #513997;border-radius: 4px;width:16%;border:
+                                1px solid black">
+                                <div
+                                    style="
+                                    color: white;
+
+                                    padding: 15px 8px;
+                                    font-size: 16px;
+                                    text-align: center;
+                                    font-weight: bold;
+                                    ">
+                                    Reward
+
+                                    Summary
+
+                                </div>
+                            </td>
+                            <td style="width:30%; ">
+                                <div
+                                    style="border: 1px solid
+                                    #000000; border-radius: 4px">
+                                    <div
+                                        style="
+                                        padding: 10px 8px;
+                                        background: #e5e7ff;
+                                        border-bottom: 0.5px solid
+                                        #000000;
+                                        font-size: 14px;
+                                        text-align: center;
+                                        border-radius: 4px 4px 0px
+                                        0px;
+                                        ">
+                                        Points Earned
+                                    </div>
+                                    <div
+                                        style="
+                                        border-radius: 0px 0px 4px
+                                        4px;
+                                        padding: 15px 8px;
+                                        background-color: white;
+                                        font-size: 12px;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        ">
+                                        { 123}
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:30%">
+                                <div
+                                    style="border: 1px solid
+                                    #000000; border-radius: 4px">
+                                    <div
+                                        style="
+                                        padding: 10px 8px;
+                                        background: #e5e7ff;
+                                        border-bottom: 0.5px solid
+                                        #000000;
+                                        font-size: 16px;
+                                        text-align: center;
+                                        border-radius: 4px 4px 0px
+                                        0px;
+                                        ">
+                                        Points Used
+                                    </div>
+                                    <div
+                                        style="
+                                        border-radius: 0px 0px 4px
+                                        4px;
+                                        padding: 15px 8px;
+                                        background-color: white;
+                                        font-size: 14px;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        ">
+                                        { 123}
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:30%">
+                                <div
+                                    style="border: 1px solid
+                                    #000000; border-radius: 4px">
+                                    <div
+                                        style="
+                                        padding: 10px 8px;
+                                        background: #e5e7ff;
+                                        border-bottom: 0.5px solid
+                                        #000000;
+                                        font-size: 16px;
+                                        text-align: center;
+                                        border-radius: 4px 4px 0px
+                                        0px;
+                                        ">
+                                        Points Expired
+                                    </div>
+                                    <div
+                                        style="
+                                        border-radius: 0px 0px 4px
+                                        4px;
+                                        padding: 15px 8px;
+                                        background-color: white;
+                                        font-size: 14px;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        ">
+                                        { 123}
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px 30px; background-color: white">
+                    <div style="border-radius: 4px; padding: 10px; font-size:
+                        14px; border:1px solid black">
+                        For all your big expenses, you can now convert the
+                        transactions and the bills into easy EMI offered by SBM
+                        Bank’s Super EMI App. To convert your
+
+                        transaction into EMI, log into the internet banking and
+                        go to the EMI section to avail EMI options.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px 30px;">
+                    <div style="border-radius: 4px; padding: 10px; font-size:
+                        14px; border:1px solid black; background-color: #513997;
+                        color:white;text-align: center;">
+                        TRANSACTION DETAILS
+                    </div>
+                </td>
+
+                <tr>
+                    <td style="padding: 0px 30px 10px;">
+                        <table cellspacing="0"
+                            cellpadding="0"
+                            width="100%" border="1px"
+                            style="border:1px solid lightgray; border-radius:
+                            4px 4px 0 0 ">
+                            <tr>
+                                <th style="background-color: #e5e7ff; padding:
+                                    10px; border-radius: 4px 0 0 0 ;">Date</th>
+                                <th style="background-color: #e5e7ff;">Ref.Number</th>
+                                <th style="background-color: #e5e7ff;">Transaction
+                                    Detail</th>
+                                <th style="background-color: #e5e7ff;">Reward
+                                    Point</th>
+                                <th style="background-color: #e5e7ff;">Type</th>
+                                <th style="background-color: #e5e7ff; padding:
+                                    10px; border-radius: 0 4px 0 0 ;">Amount(inRs)</th>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                                <td style="text-align: center;padding: 8px;">{VALUE}</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+
+                    <tr>
+                        <td style="padding: 20px 30px 10px">
+                            <div style="border-bottom: 1px solid black;
+                                padding:
+                                10px
+                                0px;font-weight: 600;">
+                                IMPORTANT MESSAGE
+                            </div>
+                            <ul style="padding: 0px 0px 8px 25px;
+                                border-bottom: 1px
+                                solid
+                                black;">
+                                <li style="padding: 6px">Safety Tips - Do
+                                    not
+                                    transact
+                                    if you find any suspicious device
+                                    attached to
+                                    the
+                                    ATM machine. Do not take help from
+                                    stranger at
+                                    an
+                                    ATM</li>
+                                <li style="padding: 6px">Safety Tips - Do
+                                    not
+                                    transact
+                                    if you find any suspicious device
+                                    attached to
+                                    the
+                                    ATM machine. Do not take help from
+                                    stranger at
+                                    an
+                                    ATM</li>
+                                <li style="padding: 6px">Safety Tips - Do
+                                    not
+                                    transact
+                                    if you find any suspicious device
+                                    attached to
+                                    the
+                                    ATM machine. Do not take help from
+                                    stranger at
+                                    an
+                                    ATM</li>
+                                <li style="padding: 6px">Safety Tips - Do
+                                    not
+                                    transact
+                                    if you find any suspicious device
+                                    attached to
+                                    the
+                                    ATM machine. Do not take help from
+                                    stranger at
+                                    an
+                                    ATM</li>
+                            </ul>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 30px 10px">
+                            <div style=" padding: 10px
+                                0px;font-weight: 500;">
+                                For SBM India Bank Limited
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 40px 30px 10px">
+                            <div style=" padding: 10px
+                                0px;font-weight: 500;">
+                                Authorised Signatory
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+            </body>
+        </html>

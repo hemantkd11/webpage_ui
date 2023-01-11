@@ -1,0 +1,112 @@
+.footer_container {
+  width: 100%;
+  background: black;
+  color: white;
+  display: flex;
+  padding: 10px 0 20px 0;
+  justify-content: center;
+}
+.footer-box {
+  width: 80%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 12px;
+}
+.Footer-header-text {
+  font-weight: 700;
+  font-size: 22px;
+  padding: 15px 0 0 0;
+}
+.footer-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.list-details {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  line-height: 13px;
+}
+.footer-list ul li {
+  list-style: none;
+}
+.Flex-for-Row {
+  display: flex;
+  gap: 10px;
+}
+.email-text-field {
+  font-size: 9px;
+  padding: 10px 0 0 0;
+}
+
+.flexBox {
+  width: 33%;
+  color: rgb(158, 156, 156);
+  line-height: 12px;
+}
+.text-color {
+  color: white;
+  padding: 2px 0px 2px 0px;
+}
+.footer-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.padding {
+  padding-bottom: 3px;
+}
+.dev-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.vegapayment-solution {
+  font-size: 12px;
+  line-height: 18px;
+}
+@media only screen and (max-width: 800px) {
+  .vegapayment-solution {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+.vega-tech {
+  color: rgb(78, 75, 75);
+}
+.email-box {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.font {
+  font-size: 10px;
+}
+.list-details-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.text-footer-right {
+  border-right: 1px solid rgb(28, 27, 27);
+}
+.text-footer-left {
+  border-left: 1px solid rgb(28, 27, 27);
+  padding-left: 0.5rem;
+}
