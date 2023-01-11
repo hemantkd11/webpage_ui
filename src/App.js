@@ -9,11 +9,13 @@ import Contact from "./components/contacts/Contact";
 import VegaModel from "./components/model/Model";
 import Slider from "./components/Slider";
 import Nav from "./components/navigationBar/Nav";
+import VegaModal from "./components/model/Model";
 function App() {
   return (
     <div className="">
       <Router>
         <Nav />
+        <VegaModal />
         {/* <NavBar /> */}
         <Routes>
           <Route path="/" element={<VegaPay />} />

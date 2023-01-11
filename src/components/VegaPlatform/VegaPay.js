@@ -6,8 +6,10 @@ import EastIcon from "@mui/icons-material/East";
 import CreditSuite from "./CreditSuite";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import Slider from "../Slider";
+import { useModal } from "../context/ModelContext";
 
 const VegaPay = () => {
+    const {setModal} = useModal(false)
   return (
     <div className="Container">
       <div className="Header_Banner">
@@ -25,7 +27,9 @@ const VegaPay = () => {
                 background: " #ffffff",
                 color: " #36285B",
                 borderRadius: "1px",
+                zIndex: '0px',
               }}
+             onClick={()=>setModal(true)}
               variant="contained"
               endIcon={<EastIcon />}
             >

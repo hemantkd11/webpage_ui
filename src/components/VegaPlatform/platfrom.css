@@ -72,40 +72,19 @@ credit
 }
 .credit-box {
   width: 80%;
-
   box-shadow: 0px 4px 41px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   height: 150px;
   display: flex;
-
   gap: 10px;
 }
-
-@media only screen and (max-width: 600px) {
-  .credit-box {
-    width: 80%;
-    background: linear-gradient(91.38deg, #3c2d67 1.18%, #1d1438 100%);
-    box-shadow: 0px 4px 41px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-
-    padding: 10px;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .VegaCredit {
-    width: 100%;
-    display: flex;
-    padding: 10px;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    background: #e5e6ff;
-  }
+.credit-content {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .credit-suite {
@@ -115,27 +94,15 @@ credit
   border-radius: 10px;
   width: 100%;
   display: flex;
+
 }
-@media only screen and (max-width: 700px) {
-  .credit-suite {
-    padding: 1rem;
-    background: linear-gradient(91.38deg, #3c2d67 1.18%, #1d1438 100%);
-    box-shadow: 0px 4px 41px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-}
+
 
 .img-credit {
   display: flex;
   background: linear-gradient(101.23deg, #ffffff 0%, #ffffff 100%);
-  border: 0.406736px solid #dedede;
-  padding: 10px;
-  height: 40px;
+  border: 0.406736px solid #dedede; 
+  height: 60px;
   width: 150px;
   flex: 1;
   align-items: center;
@@ -145,7 +112,7 @@ credit
 
 .credit-header {
   display: flex;
-  width: 100%;
+  width: 40%;
   align-items: center;
   justify-content: center;
   padding: 0px 0px 15px 0px;
@@ -163,6 +130,7 @@ credit
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 .credit-content {
   display: flex;
@@ -170,6 +138,55 @@ credit
   width: 100%;
   gap: 10px;
   align-items: center;
-
   justify-content: center;
+}
+
+
+@media only screen and (max-width: 750px) {
+  .credit-box {
+    width: 80%;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+   
+  }
+  .VegaCredit {
+    width: 100%;
+    display: flex;
+    padding: 10px 0px 10px 0px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background: #e5e6ff;
+  }
+  .credit-suite {
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .credit-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-credit {
+    padding: 10px;
+    
+  }
+  .credit-header {
+
+    width: 100%;
+  
+  }
+  
 }

@@ -1,11 +1,16 @@
 import { Button, Modal } from "@mui/material";
 import "./model.css";
 import React, { useState } from "react";
+import { useModal } from "../context/ModelContext";
 
 const VegaModal = () => {
-  const [modalOpen, setModalOpen] = useState(true);
+  const {modal ,setModal} =  useModal()
+  const modaldata = modal
   return (
-    <div className="Model-body">
+    <Modal
+    open={false}
+    onClose={()=>setModal({modal:false,modaldata:{}})}>
+  <div className="Model-body">
       <div className="Model-container">
         <div className="body-one">
           <div className="model-logo">
@@ -56,11 +61,14 @@ const VegaModal = () => {
             </div>
             <div>
               <button className="submi"> Submit</button>
+              <button onClick={()=>setModal(false)}>close</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </Modal>
+    
   );
 };
 export default VegaModal;

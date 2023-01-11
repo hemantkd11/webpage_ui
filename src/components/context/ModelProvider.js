@@ -1,12 +1,13 @@
 
 import { useState } from 'react'
-import ModelContext from './ModelContext'
+import {ModelContext} from './ModelContext'
 
 const ModalProvider = ({children})=>{
-    const setModal = useState()
+    const[modal, setModal] = useState()
     return(
-        <ModelContext.Provider value={{setModal}}>
+        <ModelContext.Provider value={{modal,setModal}}>
             {children}
         </ModelContext.Provider>
     )
 }
+export default ModalProvider
