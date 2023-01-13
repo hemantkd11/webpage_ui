@@ -11,7 +11,7 @@ root.render(
   <React.StrictMode>
     <ModalProvider>
     <App />
-    <VegaModal/>
+   
     </ModalProvider>
 
   </React.StrictMode>

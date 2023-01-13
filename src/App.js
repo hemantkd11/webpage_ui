@@ -1,8 +1,6 @@
 import React from "react";
 import "./App.css";
-import Footer from "./components/footer/Footer";
-import { Slide } from "react-slideshow-image";
-import 'react-slideshow-image/dist/style.css'
+import Footer from "./components/footer/Footer"
 import VegaPay from "./components/VegaPlatform/VegaPay";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import VegaCompany from "./components/companyVega/CompanyVega";
