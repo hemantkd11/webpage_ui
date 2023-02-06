@@ -49,7 +49,7 @@ const VegaPayCompany = () => {
         <div className="vegacompany-header">Vision and Mission</div>
         <div className="company-text">
           <div className="text-logo">
-            <img src="./symbol.png" />
+            <img src="./symbol.png" style={{'width':'8vw'}} />
           </div>
           <div className="Vega-company-text">
             VegaPay provides you with a comprehensive credit suite featuring a

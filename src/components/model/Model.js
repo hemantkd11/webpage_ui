@@ -15,7 +15,7 @@ const VegaModal = () => {
   const modaldata = modal
   return (
     <Modal
-    open={true}
+    open={false}
     onClose={()=>setModal({modal:false,modaldata:{}})}>
   <div className="Model-body">
       <div className="Model-container">

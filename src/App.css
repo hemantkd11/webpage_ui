@@ -175,11 +175,11 @@
 .container-company {
   width: 80%;
   display: flex;
-
+  margin: 60px 0px 60px 0px;
   flex-direction: column;
   background: #ffffff;
   justify-content: center;
-  height: 500px;
+  height: auto;
 }
 
 .flex-box {
@@ -200,7 +200,7 @@
   justify-content: center;
 }
 .Vega-company-text {
-  font-size: 1rem;
+  font-size: 1.4vw;
 }
 .vegacompany-header {
   font-size: 25px;
