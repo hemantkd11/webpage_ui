@@ -1,10 +1,9 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import './Contact.css'
+import "./Contact.css";
 
 const Contact = () => {
-
   return (
     <div className="contact-container">
       <div className="contact-box">
@@ -21,19 +20,20 @@ const Contact = () => {
                 <input
                   type="text"
                   className="subject-input"
-                  placeholder="First Name"/>
-               </div>
-                <div className=" flex-1">
-                   <label className="subject input-label">Last name</label>
+                  placeholder="First-Name**"
+                />
+              </div>
+              <div className=" flex-1">
+                <label className="subject input-label">Last name</label>
 
-                   <input
-                     type="text"
-                     className="subject-input "
-                     placeholder="Last Name" />
-          
+                <input
+                  type="text"
+                  className="subject-input "
+                  placeholder="Last-Name**"
+                />
               </div>
             </div>
-         </div>
+          </div>
 
           <div className=" flex">
             <label className="subject input-label">Email</label>
@@ -69,11 +69,6 @@ const Contact = () => {
   );
 };
 
-
-
-
-
-
 // const Contact =()=>{
 //   return (
 //     <div className="grid-contact-container">
@@ -83,7 +78,7 @@ const Contact = () => {
 //               <Grid xs={12}  sx={{display:'flex',justifyContent:'center', alignItems:'center'}}>
 //                <div>Contact Us</div>
 //               </Grid>
-           
+
 //                   <Grid xs={6} >
 //                       <div className=" grid-flex">
 //                        <label className="">First name</label>
@@ -91,16 +86,16 @@ const Contact = () => {
 //                      </div>
 //                   </Grid>
 //                   <Grid  xs={6} >
-//                     <div className="grid-flex">     
+//                     <div className="grid-flex">
 //                         <label className="">Last name</label>
 //                         <input type="text"
 //                            className="subject-input "
 //                            placeholder="Last Name"/>
 //                     </div>
 //                   </Grid>
-              
+
 //                 <Grid  xs={11}>
-//                 <div className="grid-flex">     
+//                 <div className="grid-flex">
 //                         <label className="">Last name</label>
 //                         <input type="text"
 //                            className="subject-input "
@@ -108,7 +103,7 @@ const Contact = () => {
 //                     </div>
 //                 </Grid>
 //                 <Grid  xs={11}>
-//                 <div className="grid-flex">     
+//                 <div className="grid-flex">
 //                         <label className="">Last name</label>
 //                         <input type="text"
 //                            className="subject-input "
@@ -116,25 +111,20 @@ const Contact = () => {
 //                     </div>
 //                 </Grid>
 //                 <Grid  xs={11}>
-//                 <div className="grid-flex">     
+//                 <div className="grid-flex">
 //                         <label className="">Last name</label>
 //                         <input type="text"
 //                            className="subject-input "
 //                            placeholder="Last Name"/>
 //                     </div>
 //                 </Grid>
-              
+
 //             </Grid>
-       
+
 //          </div>
 //       </div>
 //     </div>
-  
-         
 
-
-
-   
 //   )
 // }
 

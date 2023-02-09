@@ -133,7 +133,7 @@ ul {
   flex-direction: row;
 }
 
-/*second navbar  component css*/
+/*second navbar  Component css*/
 .nav-bar-box {
   position: fixed;
   width: 100%;
@@ -208,23 +208,17 @@ a {
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     list-style: none;
-    background-color: #d5dad6;
+    background-color: white;
     left: 0;
     height: auto;
     top: 35px;
     transition: all 0.5s ease-out;
-    width: 100%;
+    width: 150px;
   }
   li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     color: black;
     text-align: center;
-
     transition: all 0.5s ease;
   }
   .signup {
