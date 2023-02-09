@@ -20,7 +20,11 @@ const VegaWorks = () => {
         </div>
         <div>
           <Button
-            sx={{ background: " #331251", borderRadius: "1px" ,position:'unset'}}
+            sx={{
+              background: " #331251",
+              borderRadius: "1px",
+              position: "unset",
+            }}
             variant="contained"
             endIcon={<EastIcon />}
           >

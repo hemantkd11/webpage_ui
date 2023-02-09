@@ -26,7 +26,7 @@ const CreditSuite = () => {
               <div className="credit-logo">
                 <img src="./Frame.png" />
               </div>
-              <div  className="credit-flex">Zero hassles</div>
+              <div className="credit-flex">Zero hassles</div>
             </div>
           </div>
         </div>
