@@ -8,19 +8,22 @@ import Contact from "./components/contacts/Contact";
 import VegaModel from "./components/model/Model";
 import Slider from "./components/Slider";
 import Nav from "./components/navigationBar/Nav";
-import VegaModal from "./components/model/Model";
+import SlideShow from "./slideShow/slide";
+// import VegaModal from "./components/model/Model";
+
 function App() {
   return (
-    <div className="">
+    <div >
       <Router>
         <Nav />
-        <VegaModal />
+ 
         <Routes>
           <Route path="/" element={<VegaPay />} />
           <Route path="/aboutcompany" element={<VegaCompany />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/modal" element={<VegaModel />} />
           <Route path="/slider" element={<Slider></Slider>} />
+          <Route path="/slide" element={<SlideShow/>}></Route>
         </Routes>
         <Footer />
       </Router>

@@ -1,38 +1,49 @@
-import { Button, Modal, SvgIcon } from "@mui/material";
+import { Drawer, Modal } from "@mui/material";
+import CloseIcon from '@mui/icons-material/CloseOutlined';
+// import CloseIcon from '@mui/icons-material/Close';
 import "./model.css";
-import React, { useState } from "react";
-import { useModal } from "../context/ModelContext";
+import React from "react";
+import  useModal  from "../context/ModelContext";
 import Checkbox from '@mui/material/Checkbox';
-import { TurnedIn } from "@mui/icons-material";
+
 
 const VegaModal = () => {
+  const {modal,setModal} = useModal()
+  const {modaldata} = modal
   const [checked, setChecked] = React.useState(false);
 
   const handleChange = (event) => {
     setChecked(event.target.checked);
   };
-  const {modal ,setModal} =  useModal(false)
-  const modaldata = modal
+ const handleClose=()=>{
+  setModal(false)
+ }
   return (
     <Modal
-    open={false}
-    onClose={()=>setModal({modal:false,modaldata:{}})}>
-  <div className="Model-body">
+    open={true}
+    onClose={()=>setModal({modal:false})}>
+  <div className="Model-body ">
+  
       <div className="Model-container">
+       
         <div className="body-one">
           <div className="model-logo">
             <img src="./VegaPay.png" />
           </div>
         </div>
         <div className="body-two">
+        <button className="close-btn" onClick={()=>setModal({modal:false})}><CloseIcon/></button> 
           <div className="input-field">
+      
+                      
+            
             <div className="sub-input flex">
               <label className="subject input-label">Full Name</label>
 
               <input
                 type="text"
                 className="subject-input "
-                placeholder="Enetr Your FullName"
+                placeholder="Enetr Your Full Name"
               />
             </div>
             <div className="sub-input flex">

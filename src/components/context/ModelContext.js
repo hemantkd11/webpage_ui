@@ -1,5 +1,10 @@
-import React, { createContext, useContext } from 'react'
+import{  useContext } from 'react'
 
-export const ModelContext = createContext([])
+import { ModelContext } from './ModelProvider'
 
-export const useModal =()=> useContext(ModelContext)
+
+const useModal =()=> {
+    const {modal,setModal}= useContext(ModelContext)
+    return {modal,setModal}
+}
+export default useModal

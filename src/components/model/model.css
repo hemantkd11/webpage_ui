@@ -33,6 +33,7 @@
   display: flex;
   justify-content: center;
   background-color: white;
+ 
 }
 
 .input-field {
@@ -72,4 +73,22 @@ label{
   font-size: 0.7rem;
   color: #767577;
 
+}
+.close-btn{
+ position: fixed;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border: none;
+ border-radius: 50%;
+ right: 20px;
+ width: 50%;
+ height: 30px;
+ top: 20px;
+ width: 40px;
+ background-color: #ffffff;
+}
+.close-btn:hover{
+  background-color: #6700a7;
+  color: white;
 }

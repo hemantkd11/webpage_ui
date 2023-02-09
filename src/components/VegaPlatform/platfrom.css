@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 @media only screen and (max-width: 600px) {
   .Platform-container {
@@ -10,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: auto;
   }
 }
 .platform-box {
@@ -38,7 +40,7 @@
   align-items: center;
   padding: 20px;
   gap: 10px;
-  height: 100px;
+  height: auto;
   border: 1px solid #dedede;
   border-radius: 10px;
   font-size: 12px;
@@ -46,7 +48,7 @@
 }
 
 .platform-box-heading {
-  font-size: 21px;
+  font-size: 20px ;
   font-weight: 600;
 }
 .grid {
@@ -59,7 +61,15 @@
   align-items: center;
   justify-content: center;
 }
-
+.logo-box {
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  border-radius: 100%;
+  display: flex;
+  box-shadow: 1px 1px 37px 4px lightgray;
+  justify-content: center;
+}
 /*
 credit
 */
@@ -106,6 +116,7 @@ credit
   height: 60px;
   width: 150px;
   flex: 1;
+   gap: 15%;
   align-items: center;
   justify-content: center;
   border-radius: 6px;
@@ -122,9 +133,17 @@ credit
 }
 .credit-logo {
   display: flex;
-  box-shadow: 5px 10px #ffff;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 25px;
+  box-shadow: 0px 0px 8px -2px #4d4b4b;
+  border-radius: 50%;
   background-color: white;
   padding: 0px 5px 0px 5px;
+}
+.credit-logo img{
+ background-size: 1vw;
 }
 
 .credit-details {
@@ -135,11 +154,17 @@ credit
 }
 .credit-content {
   display: flex;
-  flex: 1;
+  
   width: 100%;
   gap: 10px;
   align-items: center;
   justify-content: center;
+}
+.credit-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
 }
 
 
@@ -154,6 +179,11 @@ credit
 
    
   }
+  .platform-box-heading {
+    font-size: 15px ;
+    font-weight: 600;
+  }
+
   .VegaCredit {
     width: 100%;
     display: flex;
@@ -190,4 +220,54 @@ credit
   
   }
   
+}
+@media only screen and (max-width:450px) {
+  .platform_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    height: auto;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: rgb(252, 252, 252);
+  }
+  .platform-box-heading {
+    font-size: 12px ;
+    font-weight: 600;
+  }
+
+  .logo-box {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 100%;
+    display: flex;
+    box-shadow: 1px 1px 37px 4px lightgray;
+    justify-content: center;
+  }
+  .logo-box img{
+     width: 30px;
+     padding: auto;
+  }
+  .contained{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
+  .text-comp{
+    text-align: center;
+    font-size: 10px;
+  }
+  .text_header{
+    font-size: 25px;
+  }
+  .text_body{
+    font-size: 12px;
+  }
 }
