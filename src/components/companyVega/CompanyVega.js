@@ -1,7 +1,5 @@
 import React from "react";
-import { TextField } from "@mui/material";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import Slider from "../Slider";
 import SlideShow from "../../slideShow/slide";
 const VegaCompany = () => {
   return (
@@ -34,7 +32,7 @@ const VegaCompany = () => {
         <VegaPayCompany />
       </div>
       <div className="slideShow_box">
-       <SlideShow/>
+        <SlideShow />
       </div>
       <div>
         <VegaPayTeam />
@@ -50,7 +48,7 @@ const VegaPayCompany = () => {
         <div className="vegacompany-header">Vision and Mission</div>
         <div className="company-text">
           <div className="text-logo">
-            <img src="./symbol.png" style={{'width':'8vw'}} />
+            <img src="./symbol.png" style={{ width: "8vw" }} />
           </div>
           <div className="Vega-company-text">
             VegaPay provides you with a comprehensive credit suite featuring a
@@ -80,51 +78,11 @@ const VegaPayTeam = () => {
             </div>
             <div className="member-name">Puneet Sharma</div>
             <div className="social-site-logo">
-            <div className="vector-in">
-                <TwitterIcon
-                  sx={{
-                    width: '13px',
-                    height: '20px'
-                  }}
-                />
-              </div>
-
               <div className="vector-in">
-                <img src="./VectorIn.png" />
-              </div>
-            </div>
-          </div>
-          <div className="teamImg-box">
-            <div className="team-member">
-              <img src="./image.png" />
-            </div>
-            <div className="member-name">Puneet Sharma</div>
-            <div className="social-site-logo">
-            <div className="vector-in">
                 <TwitterIcon
                   sx={{
-                    width: '13px',
-                    height: '20px'
-                  }}
-                />
-              </div>
-
-              <div className="vector-in">
-                <img src="./VectorIn.png" />
-              </div>
-            </div>
-          </div>
-          <div className="teamImg-box">
-            <div className="team-member">
-              <img src="./image.png" />
-            </div>
-            <div className="member-name">Puneet Sharma</div>
-            <div className="social-site-logo">
-            <div className="vector-in">
-                <TwitterIcon
-                  sx={{
-                    width: '13px',
-                    height: '20px'
+                    width: "13px",
+                    height: "20px",
                   }}
                 />
               </div>
@@ -143,8 +101,48 @@ const VegaPayTeam = () => {
               <div className="vector-in">
                 <TwitterIcon
                   sx={{
-                    width: '13px',
-                    height: '20px'
+                    width: "13px",
+                    height: "20px",
+                  }}
+                />
+              </div>
+
+              <div className="vector-in">
+                <img src="./VectorIn.png" />
+              </div>
+            </div>
+          </div>
+          <div className="teamImg-box">
+            <div className="team-member">
+              <img src="./image.png" />
+            </div>
+            <div className="member-name">Puneet Sharma</div>
+            <div className="social-site-logo">
+              <div className="vector-in">
+                <TwitterIcon
+                  sx={{
+                    width: "13px",
+                    height: "20px",
+                  }}
+                />
+              </div>
+
+              <div className="vector-in">
+                <img src="./VectorIn.png" />
+              </div>
+            </div>
+          </div>
+          <div className="teamImg-box">
+            <div className="team-member">
+              <img src="./image.png" />
+            </div>
+            <div className="member-name">Puneet Sharma</div>
+            <div className="social-site-logo">
+              <div className="vector-in">
+                <TwitterIcon
+                  sx={{
+                    width: "13px",
+                    height: "20px",
                   }}
                 />
               </div>

@@ -1,4 +1,3 @@
-import { Grid } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Contact.css";
@@ -20,7 +19,7 @@ const Contact = () => {
                 <input
                   type="text"
                   className="subject-input"
-                  placeholder="First-Name**"
+                  placeholder="First Name"
                 />
               </div>
               <div className=" flex-1">
@@ -29,7 +28,7 @@ const Contact = () => {
                 <input
                   type="text"
                   className="subject-input "
-                  placeholder="Last-Name**"
+                  placeholder="Last Name"
                 />
               </div>
             </div>
