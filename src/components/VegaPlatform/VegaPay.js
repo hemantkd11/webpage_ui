@@ -3,11 +3,15 @@ import { Button, Grid } from "@mui/material";
 import VegaWorks from "./VegaWorks";
 import "./platfrom.css";
 import EastIcon from "@mui/icons-material/East";
+import Arrow from "@mui/icons-material/ArrowForwardIos"
 import CreditSuite from "./CreditSuite";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import Slider from "../Slider";
+import  useModal  from "../context/ModelContext";
+import SlideShow from "../../slideShow/slide";
 
 const VegaPay = () => {
+    const {setModal} = useModal(false)
   return (
     <div className="Container">
       <div className="Header_Banner">
@@ -25,11 +29,18 @@ const VegaPay = () => {
                 background: " #ffffff",
                 color: " #36285B",
                 borderRadius: "1px",
+               
+                position:"unset",
+               
+                fontSize:'10px',
+                
+                 
               }}
+             onClick={()=>setModal({modal:'ADD_MODEL'})}
               variant="contained"
-              endIcon={<EastIcon />}
+              endIcon={<Arrow />}
             >
-              Learn More
+              Request Demo
             </Button>
           </div>
 
@@ -44,8 +55,8 @@ const VegaPay = () => {
       <div className="VegaCredit">
         <CreditSuite />
       </div>
-      <div>
-        <Slider />
+      <div className="slideShow_box">
+      <SlideShow/>
       </div>
       <div className="Vegaworks">
         <VegaWorks />

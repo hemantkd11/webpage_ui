@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="contact-box">
         <div className="form">
           <div className="flex heading-flex">
-            <h3 className=" heading">Contact Us</h3>
+            <h3 className="heading">Contact Us</h3>
           </div>
 
           <div className=" contact-box-flex ">

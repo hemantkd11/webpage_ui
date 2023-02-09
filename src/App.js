@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
-import Footer from "./components/footer/Footer";
-import NavBar from "./components/navigationBar/NavBar";
+import Footer from "./components/footer/Footer"
 import VegaPay from "./components/VegaPlatform/VegaPay";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import VegaCompany from "./components/companyVega/CompanyVega";
@@ -9,18 +8,22 @@ import Contact from "./components/contacts/Contact";
 import VegaModel from "./components/model/Model";
 import Slider from "./components/Slider";
 import Nav from "./components/navigationBar/Nav";
+import SlideShow from "./slideShow/slide";
+// import VegaModal from "./components/model/Model";
+
 function App() {
   return (
-    <div className="">
+    <div >
       <Router>
         <Nav />
-        {/* <NavBar /> */}
+ 
         <Routes>
           <Route path="/" element={<VegaPay />} />
           <Route path="/aboutcompany" element={<VegaCompany />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/modal" element={<VegaModel />} />
           <Route path="/slider" element={<Slider></Slider>} />
+          <Route path="/slide" element={<SlideShow/>}></Route>
         </Routes>
         <Footer />
       </Router>

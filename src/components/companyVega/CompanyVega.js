@@ -2,6 +2,7 @@ import React from "react";
 import { TextField } from "@mui/material";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Slider from "../Slider";
+import SlideShow from "../../slideShow/slide";
 const VegaCompany = () => {
   return (
     <div className="Container">
@@ -32,8 +33,8 @@ const VegaCompany = () => {
       <div className="Vegacompany">
         <VegaPayCompany />
       </div>
-      <div>
-        <Slider />
+      <div className="slideShow_box">
+       <SlideShow/>
       </div>
       <div>
         <VegaPayTeam />
@@ -49,7 +50,7 @@ const VegaPayCompany = () => {
         <div className="vegacompany-header">Vision and Mission</div>
         <div className="company-text">
           <div className="text-logo">
-            <img src="./symbol.png" />
+            <img src="./symbol.png" style={{'width':'8vw'}} />
           </div>
           <div className="Vega-company-text">
             VegaPay provides you with a comprehensive credit suite featuring a
@@ -79,13 +80,11 @@ const VegaPayTeam = () => {
             </div>
             <div className="member-name">Puneet Sharma</div>
             <div className="social-site-logo">
-              <div>
+            <div className="vector-in">
                 <TwitterIcon
                   sx={{
-                    width: "100%",
-                    background: "lightgray",
-                    height: 20,
-                    borderRadius: "100%",
+                    width: '13px',
+                    height: '20px'
                   }}
                 />
               </div>
@@ -101,13 +100,11 @@ const VegaPayTeam = () => {
             </div>
             <div className="member-name">Puneet Sharma</div>
             <div className="social-site-logo">
-              <div>
+            <div className="vector-in">
                 <TwitterIcon
                   sx={{
-                    width: 20,
-                    background: "lightgray",
-                    height: 20,
-                    borderRadius: "100%",
+                    width: '13px',
+                    height: '20px'
                   }}
                 />
               </div>
@@ -123,13 +120,11 @@ const VegaPayTeam = () => {
             </div>
             <div className="member-name">Puneet Sharma</div>
             <div className="social-site-logo">
-              <div>
+            <div className="vector-in">
                 <TwitterIcon
                   sx={{
-                    width: 20,
-                    background: "lightgray",
-                    height: 20,
-                    borderRadius: "100%",
+                    width: '13px',
+                    height: '20px'
                   }}
                 />
               </div>
@@ -145,13 +140,11 @@ const VegaPayTeam = () => {
             </div>
             <div className="member-name">Puneet Sharma</div>
             <div className="social-site-logo">
-              <div>
+              <div className="vector-in">
                 <TwitterIcon
                   sx={{
-                    width: 20,
-                    background: "lightgray",
-                    height: 20,
-                    borderRadius: "100%",
+                    width: '13px',
+                    height: '20px'
                   }}
                 />
               </div>

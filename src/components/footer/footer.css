@@ -42,7 +42,7 @@
 .footer-content {
   display: flex;
   flex-direction: column;
-  line-height: 11px;
+  line-height: 16px;
   padding-left: 15px;
 
 }
@@ -54,8 +54,9 @@
   gap: 10px;
 }
 .email-text-field {
-  font-size: 9px;
+  font-size: 11px;
   padding: 10px 0 0 0;
+  line-height: 17px;
 }
 
 .flexBox {
@@ -66,7 +67,7 @@
   line-height: 12px;
 }
 .text-color {
-  color: white;
+  color: rgb(235, 229, 229);
   padding: 2px 0px 2px 0px;
 }
 .footer-gap {
@@ -82,6 +83,7 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+  line-height: 18px;
 }
 .vegapayment-solution {
   font-size: 12px;
@@ -97,7 +99,9 @@
   }
 }
 .vega-tech {
-  color: rgb(78, 75, 75);
+  font-size: 10px;
+  color: rgb(53, 51, 51);
+  font-weight: 700;
 }
 .email-box {
   display: flex;
@@ -118,4 +122,37 @@
 .text-footer-left {
   border-left: 1px solid rgb(28, 27, 27);
   padding-left: 0.5rem;
+}
+.text-shade{
+color: rgb(131, 127, 127);
+}
+@media only screen and (max-width: 550px) {
+  .footer-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .flexBox{
+    width: 100%;
+  }
+  .text-footer-right {   
+    border-bottom: 1px solid rgb(28, 27, 27);
+    border-right: none;
+}
+.footer-content {
+  width: 50%;
+  padding-left: 0px;
+}
+.footer-divst{
+  width: 50%;
+}
+.list-details {
+  border-bottom: 1px solid rgb(28, 27, 27);
+}
+.text-footer-left {
+  border-left: none;
+  padding-left: 0.5rem;
+}
 }

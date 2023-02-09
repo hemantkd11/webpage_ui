@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import React from "react";
 import EastIcon from "@mui/icons-material/East";
+import Arrow from "@mui/icons-material/ArrowForwardIos"
 import "./footer.css";
 const Footer = () => {
   return (
@@ -24,7 +25,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="flexBox">
+            <div className="flexBox ">
               <div className="list-details">
                 <div className="footer-content footer-mid-box">
                   <div className="text-color">Platform</div>
@@ -35,8 +36,8 @@ const Footer = () => {
                   <div className="text-color footer-gap">
                     <p>Solutions</p>
 
-                    <div>Co-brand credit</div>
-                    <p>BNPL</p>
+                    <div className="text-shade">Co-brand credit</div>
+                    <p className="text-shade">BNPL</p>
                   </div>
                 </div>
                 <div className="footer-divst footer-mid-box">
@@ -45,21 +46,25 @@ const Footer = () => {
                     <div className="text-color footer-gap font">Company</div>
                     <div className="text-color footer-gap font">Contact Us</div>
                     <div className="text-color footer-gap font">Careers</div>
-                    <p className="text-color footer-gap ">About Us</p>
+                    <div className="text-color footer-gap ">About Us</div>
                   </div>
 
                   <div>
                     <Button
                       sx={{
                         width: "70%",
-                        height: "30px",
-                        fontSize: "7px",
+                        height: "20px",
+                        fontSize: "8px",
                         background: " #fff",
                         color: "black",
                         borderRadius: "0",
+                        position:'unset',
+                        letterSpacing:'0px',
+                        lineHeight:'8px',
+                        textTransform:'none'
                       }}
                       variant="contained"
-                      endIcon={<EastIcon />}
+                      endIcon={<Arrow sx={{width:'15px'}}/>}
                     >
                       Request Demo
                     </Button>
@@ -78,8 +83,7 @@ const Footer = () => {
               <div className="email-box">
                 <div className="email-text-field">
                   Email - gaurav@vegapay.tech Contact No - +91 99303 28780
-                  Privacy Podivcy Terms of use © VegaPay technology private
-                  divmited
+                
                 </div>
                 <div className="vega-tech">
                   © VegaPay technology private limited
