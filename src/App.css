@@ -66,7 +66,6 @@
     width: 100px;
   }
   .contact-email-logo {
-    
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -88,9 +87,8 @@
 }
 .text-comp {
   width: 100%;
-   flex: 1;
-   font-size: 0.7rem;
-   
+  flex: 1;
+  font-size: 0.7rem;
 }
 .container_box {
   width: 100%;
@@ -221,26 +219,25 @@
   .vega_works_logo img {
     width: 120%;
   }
- .member-name{
-  font-size: 0.2rem;
-  text-align: center;
- }
- .company_header {
-  gap: 10px;
-  text-align: center;
-
-}
-.vegacompany-header {
-  font-size: 15px;
-  font-weight: 700;
-  padding-bottom: 10px;
-  color: #414198;
-}
+  .member-name {
+    font-size: 0.2rem;
+    text-align: center;
+  }
+  .company_header {
+    gap: 10px;
+    text-align: center;
+  }
+  .vegacompany-header {
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    color: #414198;
+  }
 }
 .VegaContact {
   width: 100%;
   height: auto;
-  padding: 30px 0px 30px 0px ;
+  padding: 30px 0px 30px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -280,6 +277,9 @@
 }
 .email-logo {
   display: flex;
+  text-align: center;
+}
+.center-text {
   text-align: center;
 }
 
@@ -404,13 +404,13 @@ input {
 .team-heading {
   box-sizing: border-box;
   font-size: 35px;
-  margin: 30px 0px 30px 0px ;
+  margin: 30px 0px 30px 0px;
   color: #3e1f71;
   font-weight: 700;
   text-align: center;
- display: flex;
- align-items: center;
- justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .vector-in {
   width: 20px;
@@ -419,7 +419,7 @@ input {
   background: lightgray;
   border-radius: 100%;
 }
-.vector-in img{
+.vector-in img {
   width: 12px;
 }
 .member-name {
@@ -446,14 +446,13 @@ input {
   justify-content: center;
 }
 @media only screen and (max-width: 550px) {
-
- .member-name{
-  font-size: 0.7rem;
-  text-align: center;
- }
+  .member-name {
+    font-size: 0.7rem;
+    text-align: center;
+  }
 }
-@media only screen and (max-width: 650px){
-  .css-xac76q-MuiButtonBase-root-MuiButton-root{
+@media only screen and (max-width: 650px) {
+  .css-xac76q-MuiButtonBase-root-MuiButton-root {
     padding: 6px 16px;
   }
 }
@@ -522,10 +521,9 @@ input {
   display: flex;
 }
 
-
 /* slide container*/
 
-.slick-slide{
+.slick-slide {
   display: flex;
   width: 100px;
   text-align: center;
@@ -534,31 +532,30 @@ input {
   border: none !important;
   justify-content: center;
 }
-.slick-initialized .slick-slide{
+.slick-initialized .slick-slide {
   display: flex !important;
   flex-direction: row !important;
   align-items: center;
   justify-content: center;
   height: 300px;
-
 }
-.slick-slide div{
+.slick-slide div {
   outline: none;
 }
-.slideShow_box{
+.slideShow_box {
   width: 100%;
-  background-color:  #0f0f3b;
+  background-color: #0f0f3b;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.simple_slide_box{
+.simple_slide_box {
   width: 80%;
-  overflow: hidden
+  overflow: hidden;
 }
 
-.slide_container{
+.slide_container {
   width: 100%;
   overflow: hidden;
   text-align: center;
@@ -566,12 +563,11 @@ input {
   margin: 30px 0px 15px 0px;
 }
 
-.img_slide_box img{
-  position:unset;
- width: 250px;
- z-index: 10;
+.img_slide_box img {
+  position: unset;
+  width: 250px;
+  z-index: 10;
 }
-
 
 /* platform css */
 .Platform-container {
@@ -624,7 +620,7 @@ input {
 }
 
 .platform-box-heading {
-  font-size: 20px ;
+  font-size: 20px;
   font-weight: 600;
 }
 .grid {
@@ -681,18 +677,16 @@ credit
   border-radius: 10px;
   width: 100%;
   display: flex;
-
 }
-
 
 .img-credit {
   display: flex;
   background: linear-gradient(101.23deg, #ffffff 0%, #ffffff 100%);
-  border: 0.406736px solid #dedede; 
+  border: 0.406736px solid #dedede;
   height: 60px;
   width: 150px;
   flex: 1;
-   gap: 15%;
+  gap: 15%;
   align-items: center;
   justify-content: center;
   border-radius: 6px;
@@ -718,8 +712,8 @@ credit
   background-color: white;
   padding: 0px 5px 0px 5px;
 }
-.credit-logo img{
- background-size: 1vw;
+.credit-logo img {
+  background-size: 1vw;
 }
 
 .credit-details {
@@ -730,19 +724,18 @@ credit
 }
 .credit-content {
   display: flex;
-  
+
   width: 100%;
   gap: 10px;
   align-items: center;
   justify-content: center;
 }
-.credit-flex{
+.credit-flex {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
 }
-
 
 @media only screen and (max-width: 750px) {
   .credit-box {
@@ -752,11 +745,9 @@ credit
     display: flex;
     justify-content: center;
     gap: 10px;
-
-   
   }
   .platform-box-heading {
-    font-size: 15px ;
+    font-size: 15px;
     font-weight: 600;
   }
 
@@ -788,16 +779,12 @@ credit
   }
   .img-credit {
     padding: 10px;
-    
   }
   .credit-header {
-
     width: 100%;
-  
   }
-  
 }
-@media only screen and (max-width:450px) {
+@media only screen and (max-width: 450px) {
   .platform_container {
     display: flex;
     align-items: center;
@@ -812,7 +799,7 @@ credit
     background-color: rgb(252, 252, 252);
   }
   .platform-box-heading {
-    font-size: 12px ;
+    font-size: 12px;
     font-weight: 600;
   }
 
@@ -825,25 +812,25 @@ credit
     box-shadow: 1px 1px 37px 4px lightgray;
     justify-content: center;
   }
-  .logo-box img{
-     width: 30px;
-     padding: auto;
+  .logo-box img {
+    width: 30px;
+    padding: auto;
   }
-  .contained{
+  .contained {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     justify-content: center;
   }
-  .text-comp{
+  .text-comp {
     text-align: center;
     font-size: 10px;
   }
-  .text_header{
+  .text_header {
     font-size: 25px;
   }
-  .text_body{
+  .text_body {
     font-size: 12px;
   }
 }

@@ -1,5 +1,4 @@
-import { Button, Tab, Tabs } from "@mui/material";
-import { makeStyles } from "@mui/styles";
+import { Button } from "@mui/material";
 import React, { useState } from "react";
 import Arrow from "@mui/icons-material/ArrowForwardIos";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -63,18 +62,16 @@ const Nav = () => {
               >
                 Request Demo
               </Button>
-              <button
-                className="menu"
-                onClick={() => setIsMobile(setIsMobile ? true : false)}
-              >
+              <button className="menu">
                 {isMobile ? (
                   <CloseIcon
                     sx={{ fontSize: "small", padding: "2px", border: "none" }}
-                    onClick={() => setIsMobile(true)}
+                    onClick={() => setIsMobile(setIsMobile ? false : true)}
                   />
                 ) : (
                   <MenuIcon
                     sx={{ fontSize: "large", padding: "0px", border: "none" }}
+                    onClick={() => setIsMobile(setIsMobile ? true : false)}
                   />
                 )}
               </button>
@@ -82,19 +79,6 @@ const Nav = () => {
           </div>
         </div>
       </div>
-      {/* <Tabs mdDown
-       className= {isMobile?"nav-link-mobile":'nav-link'}
-       
-       onClick={() => setIsMobile(false)}
-       value={value}
-       onChange={handelOnchange}
-       textColor='secondary'
-       indicatorColor="secondary"
-       aria-label="secondary tabs example">
-        <Tab value="one" label='one' onClick={()=>Navigate('./contact')}/>
-        <Tab value="two"  label='two' onClick={()=>Navigate('./aboutcompany')}/>
-        <Tab value="three"  label='three' onClick={()=>Navigate('./contact')}/>
-       </Tabs> */}
     </div>
   );
 };

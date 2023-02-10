@@ -5,7 +5,7 @@ const CreditSuite = () => {
     <div className="credit-box">
       <div className="credit-suite">
         <div className="credit-header">
-          <div>All-in-one credit suite</div>
+          <div className="center-text">All-in-one credit suite</div>
         </div>
 
         <div className="credit-details">

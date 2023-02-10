@@ -82,7 +82,11 @@ const VegaPowerPlatform = () => {
           container
           spacing={{ xs: 1, md: 1 }}
           columns={{ xs: 4, sm: 8, md: 12 }}
-          sx={{ justifyContent: "center" }}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
         >
           <Grid div xs={6} padding={1}>
             <div className="platform_container gap">
@@ -192,9 +196,9 @@ const VegaContactInfo = () => {
           <div className="email-logo">
             <MailOutlineIcon />
           </div>
-          <div>contact Us</div>
+          <div className="center-text">contact Us</div>
         </div>
-        <div className="temp">
+        <div className="temp center-text">
           Launch next gen credit programs in less than 7 days
         </div>
       </div>

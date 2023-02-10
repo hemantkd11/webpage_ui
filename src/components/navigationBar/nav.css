@@ -31,9 +31,10 @@
 }
 .nav-list-item {
   width: 100%;
+
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
   text-align: center;
 }
 
@@ -41,21 +42,11 @@
   display: flex;
   padding: 0px 10px 0px 10px;
   align-items: center;
+  cursor: pointer;
   flex-direction: row;
 }
 
 /*second navbar  component css*/
-.nav-bar-box {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  background-color: white;
-  justify-content: center;
-}
-/* .list:hover { 
- border: 0.2px solid rebeccapurple;
- box-sizing: border-box;
-} */
 
 .nav-link {
   display: flex;
@@ -126,23 +117,21 @@ a {
     position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
     list-style: none;
     background-color: white;
     left: 0;
-    height: auto;
-    top: 35px;
+    height: 100vh;
+    top: 30px;
     transition: all 0.5s ease-out;
-    width: 100%;
   }
   li {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
     color: black;
     text-align: center;
-
+    margin-bottom: 10px;
     transition: all 0.5s ease;
   }
   li:hover {
@@ -200,4 +189,23 @@ a {
   align-items: center;
   justify-content: center;
   gap: 11px;
+}
+@media screen and (max-width: 500px) {
+  .nav-link-mobile {
+    width: 50%;
+    align-items: center;
+    justify-content: first baseline;
+    transition: all 0.5s ease-out;
+  }
+  .list {
+    display: flex;
+    color: black;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  .list:hover {
+    background-color: #452d85;
+    color: aliceblue;
+  }
 }
