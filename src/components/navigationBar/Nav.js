@@ -24,15 +24,17 @@ const Nav = () => {
               className={isMobile ? "nav-link-mobile" : "nav-link"}
               onClick={() => setIsMobile(false)}
             >
-              <li className="list"> Platform </li>
-              <li className="list">Solutions</li>
-              <li className="list" onClick={() => Navigate("./aboutcompany")}>
-                Company
-              </li>
-              <li className="list">Devlopers</li>
-              <li className="list" onClick={() => Navigate("./contact")}>
-                Contact Us
-              </li>
+              <div className="hiii">
+                <li className="list"> Platform </li>
+                <li className="list">Solutions</li>
+                <li className="list" onClick={() => Navigate("./aboutcompany")}>
+                  Company
+                </li>
+                <li className="list">Devlopers</li>
+                <li className="list" onClick={() => Navigate("./contact")}>
+                  Contact Us
+                </li>
+              </div>
             </ul>
           </div>
 
@@ -62,18 +64,16 @@ const Nav = () => {
               >
                 Request Demo
               </Button>
-              <button
-                className="menu"
-                onClick={() => setIsMobile(setIsMobile ? true : false)}
-              >
+              <button className="menu">
                 {isMobile ? (
                   <CloseIcon
                     sx={{ fontSize: "small", padding: "2px", border: "none" }}
-                    onClick={() => setIsMobile(true)}
+                    onClick={() => setIsMobile(setIsMobile ? false : true)}
                   />
                 ) : (
                   <MenuIcon
                     sx={{ fontSize: "large", padding: "0px", border: "none" }}
+                    onClick={() => setIsMobile(setIsMobile ? true : false)}
                   />
                 )}
               </button>
@@ -85,19 +85,3 @@ const Nav = () => {
   );
 };
 export default Nav;
-
-{
-  /* <Tabs mdDown
-       className= {isMobile?"nav-link-mobile":'nav-link'}
-       
-       onClick={() => setIsMobile(false)}
-       value={value}
-       onChange={handelOnchange}
-       textColor='secondary'
-       indicatorColor="secondary"
-       aria-label="secondary tabs example">
-        <Tab value="one" label='one' onClick={()=>Navigate('./contact')}/>
-        <Tab value="two"  label='two' onClick={()=>Navigate('./aboutcompany')}/>
-        <Tab value="three"  label='three' onClick={()=>Navigate('./contact')}/>
-       </Tabs> */
-}
