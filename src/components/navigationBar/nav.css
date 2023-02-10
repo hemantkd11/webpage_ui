@@ -6,6 +6,13 @@
   z-index: 10;
   justify-content: center;
 }
+.nav-logo-box {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
 .navbar {
   width: 80%;
   display: flex;

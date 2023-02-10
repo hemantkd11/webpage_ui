@@ -33,9 +33,10 @@
   display: flex;
   justify-content: center;
   background-color: white;
- 
 }
-
+.flex {
+  display: flex;
+}
 .input-field {
   width: 100%;
   display: flex;
@@ -66,29 +67,28 @@
   flex: 1;
 }
 
-label{
+label {
   font-size: 0.7rem;
 }
-.modal-checkBox{
+.modal-checkBox {
   font-size: 0.7rem;
   color: #767577;
-
 }
-.close-btn{
- position: fixed;
- display: flex;
- justify-content: center;
- align-items: center;
- border: none;
- border-radius: 50%;
- right: 20px;
- width: 50%;
- height: 30px;
- top: 20px;
- width: 40px;
- background-color: #ffffff;
+.close-btn {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  right: 20px;
+  width: 50%;
+  height: 30px;
+  top: 20px;
+  width: 40px;
+  background-color: #ffffff;
 }
-.close-btn:hover{
+.close-btn:hover {
   background-color: #6700a7;
   color: white;
 }
