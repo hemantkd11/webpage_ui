@@ -125,12 +125,9 @@ a {
   .nav-link {
     display: none;
   }
-  .log-btn {
-    width: 80px;
-    display: flex;
-  }
+
   .nav-link-mobile {
-    box-shadow: 2px 2px 2px 2px lightgray;
+    /* box-shadow: 2px 2px 2px 2px lightgray; */
     width: 200px;
     position: fixed;
     display: flex;
@@ -140,7 +137,7 @@ a {
     background-color: white;
     left: 0;
     height: 100vh;
-    top: 32px;
+    top: 34px;
     transition: all 0.5s ease-out;
   }
   li {
@@ -183,9 +180,12 @@ a {
   .LOG_BTN {
     display: none;
   }
+
   .log-btn {
+    width: 80px;
     display: flex;
   }
+
   .logo {
     font-size: 1.2rem;
     font-weight: 700;

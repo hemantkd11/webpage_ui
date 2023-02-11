@@ -49,6 +49,9 @@
   font-size: 15px;
   letter-spacing: 0.8px;
 }
+.text {
+  text-shadow: 3px 4px 5px #1c1b1b;
+}
 @media only screen and (max-width: 750px) {
   .header-conatiner-box {
     display: flex;
@@ -116,7 +119,8 @@
 .text-comp {
   width: 100%;
   flex: 1;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  color: rgb(70, 68, 68);
 }
 .container_box {
   width: 100%;
@@ -667,6 +671,11 @@ input {
   display: flex;
   box-shadow: 1px 1px 37px 4px lightgray;
   justify-content: center;
+}
+.contained {
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
 }
 /*
 credit
