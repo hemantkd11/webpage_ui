@@ -13,6 +13,9 @@
   justify-content: center;
 }
 
+.log-btn {
+  display: none;
+}
 .navbar {
   width: 80%;
   display: flex;
@@ -34,7 +37,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 .list {
@@ -49,6 +51,7 @@
 
 .nav-link {
   display: flex;
+  align-items: center;
   justify-content: center;
   list-style: none;
 }
@@ -80,22 +83,33 @@ a {
 .menu {
   display: none;
 }
+.list:hover {
+  border-bottom: 3px solid #452d85;
+}
 @media screen and (max-width: 900px) {
+  .CONTACT {
+    width: 1px;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
   .log {
     display: flex;
     position: absolute;
     top: 15px;
     left: 35px;
   }
+  ul li {
+    padding: 0px;
+  }
   .list {
-    width: 100px;
+    width: 80px;
     display: flex;
     padding: 0;
     margin-bottom: 18px;
     justify-content: flex-start;
   }
   .list:hover {
-    justify-content: center;
+    border-bottom: none;
   }
 
   .menu {
@@ -111,13 +125,17 @@ a {
   .nav-link {
     display: none;
   }
+  .log-btn {
+    width: 80px;
+    display: flex;
+  }
   .nav-link-mobile {
     box-shadow: 2px 2px 2px 2px lightgray;
-    width: 160px;
+    width: 200px;
     position: fixed;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
     list-style: none;
     background-color: white;
     left: 0;
@@ -135,10 +153,11 @@ a {
     transition: all 0.5s ease;
   }
   li:hover {
+    border-bottom: none;
     background-color: #452d85;
     width: 100%;
     color: aliceblue;
-    border-radius: 15px 0px 0px 15px;
+    transition: 0.5s;
   }
 
   .signup {
@@ -154,8 +173,19 @@ a {
   }
 }
 @media screen and (max-width: 1070px) {
+  .CONTACT {
+    width: 80px;
+    padding-right: 13px;
+    margin-right: 10px;
+  }
 }
 @media screen and (max-width: 600px) {
+  .LOG_BTN {
+    display: none;
+  }
+  .log-btn {
+    display: flex;
+  }
   .logo {
     font-size: 1.2rem;
     font-weight: 700;

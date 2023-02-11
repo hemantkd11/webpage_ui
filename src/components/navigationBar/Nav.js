@@ -24,31 +24,41 @@ const Nav = () => {
               className={isMobile ? "nav-link-mobile" : "nav-link"}
               onClick={() => setIsMobile(false)}
             >
-              <li className="list"> Platform </li>
+              <li className="list" onClick={() => Navigate("./")}>
+                {" "}
+                Platform{" "}
+              </li>
               <li className="list">Solutions</li>
               <li className="list" onClick={() => Navigate("./aboutcompany")}>
                 Company
               </li>
               <li className="list">Devlopers</li>
-              <li className="list" onClick={() => Navigate("./contact")}>
+              <li
+                className="list CONTACT"
+                onClick={() => Navigate("./contact")}
+              >
                 Contact Us
               </li>
+              <li className="log-btn">Log-In</li>
             </ul>
           </div>
 
           <div className="nav-btns-box">
             <div className="click-btn">
-              <Button
-                sx={{
-                  width: "auto",
-                  padding: "5px",
-                  height: "auto",
-                  fontSize: "12px",
-                }}
-                variant="outlined"
-              >
-                <span className="mui-btn-text">Log In</span>
-              </Button>
+              <div className="LOG_BTN">
+                <Button
+                  sx={{
+                    width: "auto",
+                    padding: "5px",
+                    height: "auto",
+                    fontSize: "12px",
+                  }}
+                  variant="outlined"
+                >
+                  <span className="mui-btn-text">Log In</span>
+                </Button>
+              </div>
+
               <Button
                 sx={{
                   width: "160px",

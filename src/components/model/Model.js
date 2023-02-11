@@ -7,7 +7,7 @@ import useModal from "../context/ModelContext";
 import Checkbox from "@mui/material/Checkbox";
 
 const VegaModal = () => {
-  const { modal, setModal } = useModal(false);
+  const { modal, setModal } = useModal();
   const { modaldata } = modal;
   const [checked, setChecked] = React.useState(false);
 
@@ -21,8 +21,8 @@ const VegaModal = () => {
     <Modal
       open={true}
       onClose={() => setModal({ modal: false, modaldata: {} })}
-      aria-labelledby="modal-modal-title"
-      aria-describedby="modal-modal-description"
+      aria-labelledby="child-modal-title"
+      aria-describedby="child-modal-description"
     >
       <div className="Model-body ">
         <div className="Model-container">
@@ -32,12 +32,15 @@ const VegaModal = () => {
             </div>
           </div>
           <div className="body-two">
-            <button
-              className="close-btn"
-              onClick={() => setModal({ modal: false })}
-            >
-              <CloseIcon />
-            </button>
+            <div className="close_btn_box">
+              <button
+                className="close-btn"
+                onClick={() => setModal({ modal: false })}
+              >
+                <CloseIcon />
+              </button>
+            </div>
+
             <div className="input-field">
               <div className="sub-input flex">
                 <label className="subject input-label">Full Name</label>

@@ -1,6 +1,14 @@
 import React from "react";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import SlideShow from "../../slideShow/slide";
+import {
+  COMPANY_HEADER,
+  COMPANY_BANNER_TEXT,
+  VEGA_TEXTBOX_HEADER,
+  VEGA_TEXTBOX_BODY,
+} from "../../APP_CONSTANTS_TEXT";
+import VegaPayTeam from "./team";
+import { VEGA_TEAM_IMG, VEGA_TEAM_SOCIAL_LOGO } from "../../IMAGE_CONSTANTS";
+import TwitterIcon from "@mui/icons-material/Twitter";
 import Team from "./team";
 const VegaCompany = () => {
   return (
@@ -9,15 +17,8 @@ const VegaCompany = () => {
         <div className="header-conatiner-box">
           <div className="conatiner-box">
             <div className="text text-two">
-              <div className="Header-text">
-                VegaPay is a financial technology company born out of disruption
-                and built for speed.
-              </div>
-              <div className="text-body">
-                We partner with banks and financial institutions to rapidly
-                digitize their financial infrastructure and optimize growth
-                opportunities in the modern world of banking.
-              </div>
+              <div className="Header-text">{COMPANY_HEADER}</div>
+              <div className="text-body">{COMPANY_BANNER_TEXT}</div>
             </div>
           </div>
 
@@ -35,8 +36,8 @@ const VegaCompany = () => {
       <div className="slideShow_box">
         <SlideShow />
       </div>
-      <div className="">
-        <Team />
+      <div className="team_container">
+        <VegaPayTeam />
       </div>
     </div>
   );
@@ -46,113 +47,12 @@ const VegaPayCompany = () => {
   return (
     <div className="container-company">
       <div className="company_header">
-        <div className="vegacompany-header">Vision and Mission</div>
+        <div className="vegacompany-header">{VEGA_TEXTBOX_HEADER}</div>
         <div className="company-text">
           <div className="text-logo">
             <img src="./symbol.png" style={{ width: "8vw" }} />
           </div>
-          <div className="Vega-company-text">
-            VegaPay provides you with a comprehensive credit suite featuring a
-            wide breadth of modules and no-code configuration to design, deploy,
-            and direct your credit programs. VegaPay provides you with a
-            comprehensive credit suite featuring a wide breadth of modules and
-            no-code configuration to design, deploy, and direct your credit
-            programs. VegaPay provides you with a comprehensive credit suite
-            featuring a wide breadth of modules and no-code configuration to
-            design, deploy, and direct your credit programs.
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const VegaPayTeam = () => {
-  return (
-    <div className="team-container">
-      <div className="team-main-box">
-        <div className="team-heading"> The VegaPay Team</div>
-        <div className="team-img">
-          <div className="teamImg-box">
-            <div className="team-member">
-              <img src="./image.png" />
-            </div>
-            <div className="member-name">Puneet Sharma</div>
-            <div className="social-site-logo">
-              <div className="vector-in">
-                <TwitterIcon
-                  sx={{
-                    width: "13px",
-                    height: "20px",
-                  }}
-                />
-              </div>
-
-              <div className="vector-in">
-                <img src="./VectorIn.png" />
-              </div>
-            </div>
-          </div>
-          <div className="teamImg-box">
-            <div className="team-member">
-              <img src="./image.png" />
-            </div>
-            <div className="member-name">Puneet Sharma</div>
-            <div className="social-site-logo">
-              <div className="vector-in">
-                <TwitterIcon
-                  sx={{
-                    width: "13px",
-                    height: "20px",
-                  }}
-                />
-              </div>
-
-              <div className="vector-in">
-                <img src="./VectorIn.png" />
-              </div>
-            </div>
-          </div>
-          <div className="teamImg-box">
-            <div className="team-member">
-              <img src="./image.png" />
-            </div>
-            <div className="member-name">Puneet Sharma</div>
-            <div className="social-site-logo">
-              <div className="vector-in">
-                <TwitterIcon
-                  sx={{
-                    width: "13px",
-                    height: "20px",
-                  }}
-                />
-              </div>
-
-              <div className="vector-in">
-                <img src="./VectorIn.png" />
-              </div>
-            </div>
-          </div>
-          <div className="teamImg-box">
-            <div className="team-member">
-              <img src="./image.png" />
-            </div>
-            <div className="member-name">Puneet Sharma</div>
-            <div className="social-site-logo">
-              <div className="vector-in">
-                <TwitterIcon
-                  sx={{
-                    width: "13px",
-                    height: "20px",
-                  }}
-                />
-              </div>
-
-              <div className="vector-in">
-                <img src="./VectorIn.png" />
-              </div>
-            </div>
-          </div>
+          <div className="Vega-company-text">{VEGA_TEXTBOX_BODY}</div>
         </div>
       </div>
     </div>

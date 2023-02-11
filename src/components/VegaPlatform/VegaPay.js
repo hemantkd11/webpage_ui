@@ -6,6 +6,30 @@ import CreditSuite from "./CreditSuite";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import useModal from "../context/ModelContext";
 import SlideShow from "../../slideShow/slide";
+import {
+  VEGA_PLATFORM_HEADER,
+  VEGA_PLATFORM_SUB_HEADER,
+  VEGA_PLATFROM_BOXHEADER,
+  VEGA_PLATFROM_BOXTEXT,
+  PLATFORM_TEMP1,
+  PLATFORM_TEMPBODY1,
+  PLATFORM_TEMP2,
+  PLATFORM_TEMPBODY2,
+  PLATFORM_TEMP3,
+  PLATFORM_TEMPBODY3,
+  PLATFORM_TEMP4,
+  PLATFORM_TEMPBODY4,
+  PLATFORM_TEMP5,
+  PLATFORM_TEMPBODY5,
+  PLATFORM_TEMP6,
+  PLATFORM_TEMPBODY6,
+  CONTACT_INFO_HEADER,
+  CONTACT_INFO_TEXT,
+} from "../../APP_CONSTANTS_TEXT";
+import {
+  VEGA_PLATFORM_BANNER,
+  VEGA_PLATFORM_WORK,
+} from "../../IMAGE_CONSTANTS";
 
 const VegaPay = () => {
   const { setModal } = useModal(false);
@@ -14,13 +38,8 @@ const VegaPay = () => {
       <div className="Header_Banner">
         <div className="header-conatiner-box">
           <div className="text">
-            <div className="Header-text">
-              Launch digital-first credit programs in less than 7 days
-            </div>
-            <p className="text-body">
-              Integrate with a pre-build LOS, LMS, payouts and more with
-              VegaPay's all-in-one cradit suite
-            </p>
+            <div className="Header-text">{VEGA_PLATFORM_HEADER}</div>
+            <p className="text-body">{VEGA_PLATFORM_SUB_HEADER}</p>
             <Button
               sx={{
                 background: " #ffffff",
@@ -40,7 +59,7 @@ const VegaPay = () => {
           </div>
 
           <div className="mobile-logo">
-            <img src="./mobile_logo.svg" alt="Mobile logo" />
+            <img src={VEGA_PLATFORM_BANNER} alt="Mobile logo" />
           </div>
         </div>
       </div>
@@ -69,13 +88,9 @@ const VegaPowerPlatform = () => {
     <div className="Platform-container">
       <div className="platform-box">
         <div className="platform_header">
-          <div className="text_header">The power of our Platform</div>
+          <div className="text_header">{VEGA_PLATFROM_BOXHEADER}</div>
 
-          <div className="text_body">
-            We Put the power in our partners hands with out flexible and
-            intuitive platform. Each highly-configurable module orchestrates an
-            end-to-end experience for your bank and your coustomers
-          </div>
+          <div className="text_body">{VEGA_PLATFROM_BOXTEXT}</div>
         </div>
 
         <Grid
@@ -94,11 +109,8 @@ const VegaPowerPlatform = () => {
                 <img src="./logo1.png" />
               </div>
               <div className="contained">
-                <div className="platform-box-heading">Omnichannel Apply</div>
-                <div className="text-comp">
-                  Deliver tailored white-labeled consumer experiences, designed
-                  and optimized for conversions across all channels.
-                </div>
+                <div className="platform-box-heading">{PLATFORM_TEMP1}</div>
+                <div className="text-comp">{PLATFORM_TEMPBODY1}</div>
               </div>
             </div>
           </Grid>
@@ -108,11 +120,8 @@ const VegaPowerPlatform = () => {
                 <img src="./logo2.png" />
               </div>
               <div className="contained">
-                <div className="platform-box-heading">Design Engine</div>
-                <div className="text-comp">
-                  Host and deploy robust, fast and flexible models that support
-                  virtually any type of decisioning logic and analytics.
-                </div>
+                <div className="platform-box-heading">{PLATFORM_TEMP2}</div>
+                <div className="text-comp">{PLATFORM_TEMPBODY2}</div>
               </div>
             </div>
           </Grid>
@@ -122,14 +131,8 @@ const VegaPowerPlatform = () => {
                 <img src="./logo3.png" />
               </div>
               <div className="contained">
-                <div className="platform-box-heading">
-                  Fraud and Verification
-                </div>
-                <div className="text-comp">
-                  Address the risks of digital identity, income, bank account,
-                  and employment verification with a suite of API-driven
-                  modules, underpinned by flexible and proprietary data sources.
-                </div>
+                <div className="platform-box-heading">{PLATFORM_TEMP3}</div>
+                <div className="text-comp">{PLATFORM_TEMPBODY3}</div>
               </div>
             </div>
           </Grid>
@@ -139,13 +142,8 @@ const VegaPowerPlatform = () => {
                 <img src="./logo4.png" />
               </div>
               <div className="contained">
-                <div className="platform-box-heading">
-                  Account Management Platform
-                </div>
-                <div className="text-comp">
-                  Optimize your existing customer relationships by leveraging
-                  integrated and comprehensive account management capabilities.
-                </div>
+                <div className="platform-box-heading">{PLATFORM_TEMP4}</div>
+                <div className="text-comp">{PLATFORM_TEMPBODY4}</div>
               </div>
             </div>
           </Grid>
@@ -155,13 +153,8 @@ const VegaPowerPlatform = () => {
                 <img src="./logo5.png" />
               </div>
               <div className="contained">
-                <div className="platform-box-heading">Partner Portal</div>
-                <div className="text-comp">
-                  Leverage account investigation features, complaints and
-                  disputes management, suspicious activity review, and our
-                  AI-powered recommendations engine — all in one powerful
-                  partner-facing tool.
-                </div>
+                <div className="platform-box-heading">{PLATFORM_TEMP5}</div>
+                <div className="text-comp">{PLATFORM_TEMPBODY5}</div>
               </div>
             </div>
           </Grid>
@@ -171,15 +164,8 @@ const VegaPowerPlatform = () => {
                 <img src="./logo6.png" />
               </div>
               <div className="contained">
-                <div className="platform-box-heading">
-                  Data Orchestration Hub
-                </div>
-                <div className="text-comp">
-                  Navigate a network of curated data sources in one
-                  simple-to-use access point. Leverage best-in-class integration
-                  partners to orchestrate the best experience for your
-                  consumers.
-                </div>
+                <div className="platform-box-heading">{PLATFORM_TEMP6}</div>
+                <div className="text-comp">{PLATFORM_TEMPBODY6}</div>
               </div>
             </div>
           </Grid>
@@ -196,11 +182,9 @@ const VegaContactInfo = () => {
           <div className="email-logo">
             <MailOutlineIcon />
           </div>
-          <div className="center-text">contact Us</div>
+          <div className="center-text">{CONTACT_INFO_HEADER}</div>
         </div>
-        <div className="temp center-text">
-          Launch next gen credit programs in less than 7 days
-        </div>
+        <div className="temp center-text">{CONTACT_INFO_TEXT}</div>
       </div>
     </div>
   );
