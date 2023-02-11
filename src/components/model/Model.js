@@ -20,9 +20,9 @@ const VegaModal = () => {
   return (
     <Modal
       open={true}
-      onClose={handleClose}
-      aria-labelledby="child-modal-title"
-      aria-describedby="child-modal-description"
+      onClose={() => setModal({ modal: false, modaldata: {} })}
+      aria-labelledby="modal-modal-title"
+      aria-describedby="modal-modal-description"
     >
       <div className="Model-body ">
         <div className="Model-container">

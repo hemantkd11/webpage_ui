@@ -1,13 +1,14 @@
 import React from "react";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import SlideShow from "../../slideShow/slide";
+import Team from "./team";
 const VegaCompany = () => {
   return (
     <div className="Container">
       <div className="Header_Banner">
         <div className="header-conatiner-box">
           <div className="conatiner-box">
-            <div className="text">
+            <div className="text text-two">
               <div className="Header-text">
                 VegaPay is a financial technology company born out of disruption
                 and built for speed.
@@ -34,8 +35,8 @@ const VegaCompany = () => {
       <div className="slideShow_box">
         <SlideShow />
       </div>
-      <div>
-        <VegaPayTeam />
+      <div className="">
+        <Team />
       </div>
     </div>
   );

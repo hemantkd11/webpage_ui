@@ -7,9 +7,15 @@
   display: flex;
   align-items: center;
 }
+.text-two {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .Header_Banner {
   width: 100%;
-  height: 675px;
+  height: auto;
+  padding: 60px 0px 30px 0px;
   background-color: #0f0f3b;
   background-image: url("../public/background.png");
   background-repeat: no-repeat;
@@ -44,15 +50,24 @@
   letter-spacing: 0.8px;
 }
 @media only screen and (max-width: 750px) {
+  .header-conatiner-box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .conatiner-box {
+    width: 100%;
+  }
   .text-body {
     font-size: 10px;
   }
   .Header-text {
     font-size: 20px;
   }
+
   .Header_Banner {
     width: 100%;
-    height: 500px;
+    height: auto;
+
     background-color: #0f0f3b;
     background-image: url("../public/background.png");
     background-repeat: no-repeat;
@@ -62,8 +77,13 @@
     align-items: center;
     justify-content: center;
   }
-  .mobile.logo {
-    width: 100px;
+  .mobile.logo-two {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile.logo-two img {
+    width: 50%;
   }
   .contact-email-logo {
     display: flex;
@@ -73,12 +93,20 @@
     justify-content: center;
   }
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 1300px) {
   .Header-text {
-    font-size: 12px;
+    font-size: 1.4rem;
   }
   .text-body {
-    font-size: 7px;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .Header-text {
+    font-size: 1.3rem;
+  }
+  .text-body {
+    font-size: 0.7rem;
   }
 }
 .header_btn {
@@ -144,6 +172,7 @@
 
   background-size: 400px 500px;
 }
+
 .vega_works_logo {
   width: 100%;
   display: flex;
@@ -214,25 +243,6 @@
   font-weight: 700;
   padding-bottom: 20px;
   color: #414198;
-}
-@media only screen and (max-width: 800px) {
-  .vega_works_logo img {
-    width: 120%;
-  }
-  .member-name {
-    font-size: 0.2rem;
-    text-align: center;
-  }
-  .company_header {
-    gap: 10px;
-    text-align: center;
-  }
-  .vegacompany-header {
-    font-size: 15px;
-    font-weight: 700;
-    padding-bottom: 10px;
-    color: #414198;
-  }
 }
 .VegaContact {
   width: 100%;
@@ -593,7 +603,11 @@ input {
   align-items: center;
   justify-content: center;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
+  .css-y9ylp1-MuiGrid-root {
+    -webkit-flex-basis: 100% !important;
+    max-width: 100% !important;
+  }
 }
 .vega-apply {
   display: flex;
@@ -782,6 +796,48 @@ credit
   }
   .credit-header {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .vega_works_logo img {
+    width: 120%;
+  }
+  .member-name {
+    font-size: 0.2rem;
+    text-align: center;
+  }
+  .company_header {
+    gap: 10px;
+    text-align: center;
+  }
+  .vegacompany-header {
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    color: #414198;
+  }
+
+  /* vega work*/
+  .VegaWork_Container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    background-size: 400px 500px;
+  }
+  .flex-box {
+    width: 100%;
+  }
+  .vega_works_details {
+    width: 100%;
+  }
+  .work-space {
+    font-size: 0.8rem;
+  }
+  .VegaWorks_heading {
+    font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 450px) {
