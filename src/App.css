@@ -1,22 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
 .container {
   width: 100%;
   z-index: 0;
 }
-.header-conatiner-box {
-  width: 80%;
-  display: flex;
-  align-items: center;
-}
-.text-two {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
+
 .Header_Banner {
   width: 100%;
-  height: 80vh;
+  height: auto;
   padding: 60px 0px 30px 0px;
-  background-color: #0f0f3b;
+  background-color: #27274d;
   background-image: url("../public/background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,6 +22,14 @@
   align-items: center;
   justify-content: center;
 }
+.header-conatiner-box {
+  width: 80%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .mobile-logo img {
   width: 100%;
   flex: 1;
@@ -41,8 +46,9 @@
   align-items: center;
 }
 .Header-text {
-  font-size: 36px;
+  font-size: 2.1rem;
   letter-spacing: 0.5px;
+  font-weight: 500;
 }
 
 .text-body {
@@ -51,50 +57,14 @@
 }
 .text {
   text-shadow: 3px 4px 5px #1c1b1b;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-@media only screen and (max-width: 750px) {
-  .header-conatiner-box {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .conatiner-box {
-    width: 100%;
-  }
-  .text-body {
-    font-size: 10px;
-  }
-  .Header-text {
-    font-size: 20px;
-  }
-
-  .Header_Banner {
-    width: 100%;
-    height: auto;
-
-    background-color: #0f0f3b;
-    background-image: url("../public/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .mobile.logo-two {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-  .mobile.logo-two img {
-    width: 50%;
-  }
-  .contact-email-logo {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
-    justify-content: center;
-  }
+.text-two {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 @media only screen and (max-width: 1300px) {
   .Header-text {
@@ -104,14 +74,7 @@
     font-size: 0.8rem;
   }
 }
-@media only screen and (max-width: 450px) {
-  .Header-text {
-    font-size: 1.3rem;
-  }
-  .text-body {
-    font-size: 0.7rem;
-  }
-}
+
 .header_btn {
   padding: 10px;
   border-radius: 0;
@@ -167,6 +130,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 .VegaWork_Container {
   display: flex;
@@ -409,15 +373,24 @@ input {
   gap: 10px;
 }
 .team-img img {
-  width: 100%;
+  width: 70%;
 }
 .teamImg-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   flex: 1;
 }
+.to_demo {
+  padding: 10px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .team-heading {
   box-sizing: border-box;
   font-size: 35px;
@@ -454,6 +427,8 @@ input {
 .team-member {
   display: flex;
   flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 .social-site-logo {
   display: flex;
@@ -475,6 +450,23 @@ input {
     font-size: 0.7rem;
     text-align: center;
   }
+
+  .to_demo {
+    padding: 5px;
+  }
+  .team-heading {
+    font-size: 1.5rem;
+  }
+  /* .vector-in {
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+  } */
 }
 @media only screen and (max-width: 650px) {
   .css-xac76q-MuiButtonBase-root-MuiButton-root {
@@ -524,7 +516,7 @@ input {
   background-color: rgba(188, 179, 179, 0.436);
   box-shadow: 0px 0px 10px 1px black;
   border-radius: 10px;
-  color: rgb(195, 51, 51);
+  color: rgb(225, 216, 216);
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -548,50 +540,26 @@ input {
 
 /* slide container*/
 
-.slick-slide {
-  display: flex;
-  width: 100px;
-  text-align: center;
-  align-items: center;
-  height: 350px;
-  border: none !important;
-  justify-content: center;
-}
-.slick-initialized .slick-slide {
+/* .slick-initialized .slick-slide {
   display: flex !important;
   flex-direction: row !important;
   align-items: center;
   justify-content: center;
-  height: 300px;
-}
+} */
 .slick-slide div {
   outline: none;
 }
 .slideShow_box {
-  width: 100%;
   background-color: #0f0f3b;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.simple_slide_box {
-  width: 80%;
-  overflow: hidden;
-}
-
-.slide_container {
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-  height: 300px;
-  margin: 30px 0px 15px 0px;
-}
-
-.img_slide_box img {
-  position: unset;
-  width: 250px;
-  z-index: 10;
+.slideShow_bo {
+  background-color: #0f0f3b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* platform css */
@@ -617,6 +585,9 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.css-715d1t-MuiGrid-root {
+  margin-left: 0px !important;
 }
 @media only screen and (max-width: 900px) {
   .css-y9ylp1-MuiGrid-root {
@@ -648,7 +619,12 @@ input {
   font-size: 12px;
   background-color: rgb(252, 252, 252);
 }
-
+.main_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100px;
+}
 .platform-box-heading {
   font-size: 20px;
   font-weight: 600;
@@ -664,8 +640,8 @@ input {
   justify-content: center;
 }
 .logo-box {
-  width: 30px;
-  height: 30px;
+  width: 80px;
+  height: 80px;
   padding: 20px;
   border-radius: 100%;
   display: flex;
@@ -719,7 +695,7 @@ credit
   background: linear-gradient(101.23deg, #ffffff 0%, #ffffff 100%);
   border: 0.406736px solid #dedede;
   height: 60px;
-  width: 150px;
+  width: 169px;
   flex: 1;
   gap: 15%;
   align-items: center;
@@ -740,8 +716,8 @@ credit
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 25px;
+  width: 33px;
+  height: 30px;
   box-shadow: 0px 0px 8px -2px #4d4b4b;
   border-radius: 50%;
   background-color: white;
@@ -771,8 +747,49 @@ credit
   justify-content: center;
   font-size: 1rem;
 }
+@media only screen and (max-width: 850px) {
+  .conatiner-box {
+    width: 100%;
+  }
+  .Header_Banner {
+    width: 100%;
+    height: auto;
+    background-color: #0f0f3b;
+    background-image: url("../public/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
 
-@media only screen and (max-width: 750px) {
+    align-items: center;
+    justify-content: center;
+  }
+  .header-conatiner-box {
+    display: flex;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .Header-text {
+    font-size: 2.3rem;
+  }
+  .text-body {
+    font-size: 1rem;
+  }
+  .mobile.logo-two {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile.logo-two img {
+    width: 50%;
+  }
+  .contact-email-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
   .credit-box {
     width: 80%;
     border-radius: 10px;
@@ -781,11 +798,6 @@ credit
     justify-content: center;
     gap: 10px;
   }
-  .platform-box-heading {
-    font-size: 15px;
-    font-weight: 600;
-  }
-
   .VegaCredit {
     width: 100%;
     display: flex;
@@ -806,7 +818,6 @@ credit
   .credit-content {
     display: flex;
     flex-direction: column;
-    flex: 1;
     width: 100%;
     gap: 10px;
     align-items: center;
@@ -814,9 +825,14 @@ credit
   }
   .img-credit {
     padding: 10px;
+    width: 198px;
   }
   .credit-header {
     width: 100%;
+  }
+  .credit-flex {
+    display: flex;
+    font-size: 0.8rem;
   }
 }
 
@@ -825,7 +841,9 @@ credit
     width: 120%;
   }
   .member-name {
-    font-size: 0.2rem;
+    font-size: 0.6rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
     text-align: center;
   }
   .company_header {
@@ -861,6 +879,12 @@ credit
     font-size: 1.5rem;
   }
 }
+@media only screen and (max-width: 750px) {
+  .platform-box-heading {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
 @media only screen and (max-width: 450px) {
   .platform_container {
     display: flex;
@@ -875,14 +899,24 @@ credit
     font-size: 12px;
     background-color: rgb(252, 252, 252);
   }
+  .main_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    height: auto;
+
+    background-color: rgb(252, 252, 252);
+  }
   .platform-box-heading {
     font-size: 12px;
     font-weight: 600;
   }
 
   .logo-box {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 46px;
     padding: 10px;
     border-radius: 100%;
     display: flex;
@@ -907,8 +941,19 @@ credit
   .text_header {
     font-size: 25px;
   }
-  .text_body {
-    font-size: 12px;
+
+  .Header-text {
+    font-size: 1.4rem;
+  }
+  .text-body {
+    font-size: 0.9rem;
+  }
+  .img-credit {
+    padding: 10px;
+    width: 100%;
+  }
+  .credit-flex {
+    text-align: center;
   }
 }
 .team_container {
@@ -919,3 +964,38 @@ credit
   justify-content: center;
   background-color: #ffffff !important;
 }
+
+/*teams */
+.simple_slide_box_teams {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.slide_container_teams {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  align-items: center;
+}
+/* .slick-slide {
+  display: flex !important;
+  width: 300px;
+  text-align: center;
+  align-items: center;
+  height: 350px;
+  border: none !important;
+  flex-direction: row !important;
+  justify-content: center;
+} */
+/* .slick-initialized .slick-slide {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+} */
+/* .slick-slide div {
+  outline: none;
+} */
+/*teams end*/

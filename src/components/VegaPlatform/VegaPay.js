@@ -6,6 +6,8 @@ import CreditSuite from "./CreditSuite";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import useModal from "../context/ModelContext";
 import SlideShow from "../../slideShow/slide";
+import Sliders from "../../slideShow/Slider";
+// import { sliderData } from "./IMAGE_CONSTANTS";
 import {
   VEGA_PLATFORM_HEADER,
   VEGA_PLATFORM_SUB_HEADER,
@@ -29,6 +31,7 @@ import {
 import {
   VEGA_PLATFORM_BANNER,
   VEGA_PLATFORM_WORK,
+  sliderData,
 } from "../../IMAGE_CONSTANTS";
 
 const VegaPay = () => {
@@ -42,13 +45,15 @@ const VegaPay = () => {
             <p className="text-body">{VEGA_PLATFORM_SUB_HEADER}</p>
             <Button
               sx={{
+                width: "150px",
                 background: " #ffffff",
                 color: " #36285B",
                 borderRadius: "1px",
+                padding: "10px",
 
                 position: "unset",
 
-                fontSize: "10px",
+                fontSize: "12px",
               }}
               onClick={() => setModal({ modal: "ADD_MODEL" })}
               variant="contained"
@@ -69,8 +74,8 @@ const VegaPay = () => {
       <div className="VegaCredit">
         <CreditSuite />
       </div>
-      <div className="slideShow_box">
-        <SlideShow />
+      <div className="slideShow_bo">
+        <Sliders sliderData={sliderData} />
       </div>
       <div className="Vegaworks">
         <VegaWorks />
@@ -105,67 +110,79 @@ const VegaPowerPlatform = () => {
         >
           <Grid div xs={6} padding={1}>
             <div className="platform_container gap">
-              <div className="logo-box">
-                <img src="./logo1.png" />
-              </div>
-              <div className="contained">
-                <div className="platform-box-heading">{PLATFORM_TEMP1}</div>
-                <div className="text-comp">{PLATFORM_TEMPBODY1}</div>
-              </div>
-            </div>
-          </Grid>
-          <Grid div xs={6} padding={1}>
-            <div className="platform_container gap">
-              <div className="logo-box">
-                <img src="./logo2.png" />
-              </div>
-              <div className="contained">
-                <div className="platform-box-heading">{PLATFORM_TEMP2}</div>
-                <div className="text-comp">{PLATFORM_TEMPBODY2}</div>
+              <div className="main_container">
+                <div className="logo-box">
+                  <img src="./logo1.png" />
+                </div>
+                <div className="contained">
+                  <div className="platform-box-heading">{PLATFORM_TEMP1}</div>
+                  <div className="text-comp">{PLATFORM_TEMPBODY1}</div>
+                </div>
               </div>
             </div>
           </Grid>
           <Grid div xs={6} padding={1}>
             <div className="platform_container gap">
-              <div className="logo-box">
-                <img src="./logo3.png" />
-              </div>
-              <div className="contained">
-                <div className="platform-box-heading">{PLATFORM_TEMP3}</div>
-                <div className="text-comp">{PLATFORM_TEMPBODY3}</div>
-              </div>
-            </div>
-          </Grid>
-          <Grid div xs={6} padding={1}>
-            <div className="platform_container gap">
-              <div className="logo-box">
-                <img src="./logo4.png" />
-              </div>
-              <div className="contained">
-                <div className="platform-box-heading">{PLATFORM_TEMP4}</div>
-                <div className="text-comp">{PLATFORM_TEMPBODY4}</div>
+              <div className="main_container">
+                <div className="logo-box">
+                  <img src="./logo2.png" />
+                </div>
+                <div className="contained">
+                  <div className="platform-box-heading">{PLATFORM_TEMP2}</div>
+                  <div className="text-comp">{PLATFORM_TEMPBODY2}</div>
+                </div>
               </div>
             </div>
           </Grid>
           <Grid div xs={6} padding={1}>
             <div className="platform_container gap">
-              <div className="logo-box">
-                <img src="./logo5.png" />
-              </div>
-              <div className="contained">
-                <div className="platform-box-heading">{PLATFORM_TEMP5}</div>
-                <div className="text-comp">{PLATFORM_TEMPBODY5}</div>
+              <div className="main_container">
+                <div className="logo-box">
+                  <img src="./logo3.png" />
+                </div>
+                <div className="contained">
+                  <div className="platform-box-heading">{PLATFORM_TEMP3}</div>
+                  <div className="text-comp">{PLATFORM_TEMPBODY3}</div>
+                </div>
               </div>
             </div>
           </Grid>
           <Grid div xs={6} padding={1}>
             <div className="platform_container gap">
-              <div className="logo-box">
-                <img src="./logo6.png" />
+              <div className="main_container">
+                <div className="logo-box">
+                  <img src="./logo4.png" />
+                </div>
+                <div className="contained">
+                  <div className="platform-box-heading">{PLATFORM_TEMP4}</div>
+                  <div className="text-comp">{PLATFORM_TEMPBODY4}</div>
+                </div>
               </div>
-              <div className="contained">
-                <div className="platform-box-heading">{PLATFORM_TEMP6}</div>
-                <div className="text-comp">{PLATFORM_TEMPBODY6}</div>
+            </div>
+          </Grid>
+          <Grid div xs={6} padding={1}>
+            <div className="platform_container gap">
+              <div className="main_container">
+                <div className="logo-box">
+                  <img src="./logo5.png" />
+                </div>
+                <div className="contained">
+                  <div className="platform-box-heading">{PLATFORM_TEMP5}</div>
+                  <div className="text-comp">{PLATFORM_TEMPBODY5}</div>
+                </div>
+              </div>
+            </div>
+          </Grid>
+          <Grid div xs={6} padding={1}>
+            <div className="platform_container gap">
+              <div className="main_container">
+                <div className="logo-box">
+                  <img src="./logo6.png" />
+                </div>
+                <div className="contained">
+                  <div className="platform-box-heading">{PLATFORM_TEMP6}</div>
+                  <div className="text-comp">{PLATFORM_TEMPBODY6}</div>
+                </div>
               </div>
             </div>
           </Grid>

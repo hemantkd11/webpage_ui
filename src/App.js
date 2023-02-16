@@ -9,6 +9,7 @@ import VegaModel from "./components/model/Model";
 import Slider from "./slideShow/Slider";
 import Nav from "./components/navigationBar/Nav";
 import SlideShow from "./slideShow/slide";
+
 // import VegaModal from "./components/model/Model";
 
 function App() {

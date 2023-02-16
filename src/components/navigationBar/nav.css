@@ -41,7 +41,7 @@
 
 .list {
   display: flex;
-  padding: 0px 10px 0px 10px;
+  padding: 3px 10px 3px 10px;
   align-items: center;
   cursor: pointer;
   flex-direction: row;
@@ -54,6 +54,9 @@
   align-items: center;
   justify-content: center;
   list-style: none;
+}
+.drawer_view {
+  display: flex;
 }
 ul li {
   float: left;
@@ -86,12 +89,14 @@ a {
 .list:hover {
   border-bottom: 3px solid #452d85;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1070px) {
   .CONTACT {
-    width: 1px;
-    padding-right: 0px;
-    margin-right: 0px;
+    width: 100px;
+    padding-right: 13px;
+    margin-right: 10px;
   }
+}
+@media screen and (max-width: 900px) {
   .log {
     display: flex;
     position: absolute;
@@ -99,17 +104,22 @@ a {
     left: 35px;
   }
   ul li {
-    padding: 0px;
+    padding: 1px;
   }
-  .list {
-    width: 80px;
+
+  .CONTACT {
+    /* width: 100%;
     display: flex;
-    padding: 0;
+    padding-right: 0px;
     margin-bottom: 18px;
     justify-content: flex-start;
-  }
-  .list:hover {
-    border-bottom: none;
+    border-bottom: 1px solid lightgray; */
+    width: 100%;
+    display: flex;
+    color: black;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s ease;
   }
 
   .menu {
@@ -128,7 +138,7 @@ a {
 
   .nav-link-mobile {
     /* box-shadow: 2px 2px 2px 2px lightgray; */
-    width: 200px;
+    /* width: 200px;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -138,9 +148,33 @@ a {
     left: 0;
     height: 100vh;
     top: 34px;
-    transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; */
+    position: fixed;
+    top: 46px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    flex-direction: column;
+    z-index: 10;
+    box-sizing: border-box;
+    transition: 2s ease-out;
   }
+  .drawer_view {
+    overflow: hidden;
+    width: 50%;
+    display: flex;
+    height: 100vh;
+    padding: 10px 0px 0px 10px;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px 1px black;
+    background-color: white;
+    z-index: 10;
+  }
+
   li {
+    box-sizing: border-box;
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
@@ -150,11 +184,13 @@ a {
     transition: all 0.5s ease;
   }
   li:hover {
+    box-sizing: border-box;
     border-bottom: none;
     background-color: #452d85;
     width: 100%;
+
     color: aliceblue;
-    transition: 0.5s;
+    transition: all 0.5s ease;
   }
 
   .signup {
@@ -168,22 +204,33 @@ a {
     border: none;
     outline: none;
   }
-}
-@media screen and (max-width: 1070px) {
-  .CONTACT {
-    width: 80px;
-    padding-right: 13px;
-    margin-right: 10px;
+  .list {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding: 2px;
+    margin-bottom: 18px;
+    justify-content: flex-start;
+    border-bottom: 1px solid lightgray;
+  }
+  .list:hover {
+    border-bottom: none;
   }
 }
+
 @media screen and (max-width: 600px) {
   .LOG_BTN {
     display: none;
   }
 
   .log-btn {
-    width: 80px;
+    box-sizing: border-box;
+    width: 100%;
     display: flex;
+    padding: 2px;
+    margin-bottom: 18px;
+    justify-content: flex-start;
+    border-bottom: 1px solid lightgray;
   }
 
   .logo {
@@ -225,18 +272,72 @@ a {
 @media screen and (max-width: 500px) {
   .nav-link-mobile {
     width: 100%;
-
     transition: all 0.5s ease-out;
   }
+  .nav-link-mobile {
+    /* box-shadow: 2px 2px 2px 2px lightgray; */
+    /* width: 200px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+    list-style: none;
+    background-color: white;
+    left: 0;
+    height: 100vh;
+    top: 34px;
+    transition: all 0.5s ease-out; */
+
+    width: 109%;
+    top: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+
+    flex-direction: column;
+    z-index: 5;
+    box-sizing: border-box;
+  }
+  .drawer_view {
+    width: 103%;
+    box-shadow: 1px 1px 1px 1px black;
+  }
   .list {
+    width: 100%;
     display: flex;
     color: black;
     align-items: center;
     text-align: center;
     transition: all 0.5s ease;
   }
+  .CONTACT {
+    width: 100%;
+  }
   .list:hover {
     background-color: #452d85;
     color: aliceblue;
   }
+}
+
+/*drawer*/
+.drawer {
+  display: none;
+}
+.swipdrawer {
+  display: none;
+}
+.css-1u2w381-MuiModal-root-MuiDrawer-root {
+  display: none;
+}
+@media only screen and (max-width: 900px) {
+  .css-1u2w381-MuiModal-root-MuiDrawer-root {
+    display: flex;
+  }
+  .css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+    background-color: white;
+  }
+}
+
+.drawer_box {
+  width: 300px;
+  margin-top: 20px;
 }

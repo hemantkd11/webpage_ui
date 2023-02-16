@@ -1,4 +1,5 @@
 import { Button } from "@mui/material";
+import Drawer from "@mui/material/Drawer";
 import React, { useState } from "react";
 import Arrow from "@mui/icons-material/ArrowForwardIos";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -9,6 +10,7 @@ import "./nav.css";
 const Nav = () => {
   const Navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(false);
+
   return (
     <div className="nav-bar-box">
       <div className="navbar">
@@ -24,22 +26,23 @@ const Nav = () => {
               className={isMobile ? "nav-link-mobile" : "nav-link"}
               onClick={() => setIsMobile(false)}
             >
-              <li className="list" onClick={() => Navigate("./")}>
-                {" "}
-                Platform{" "}
-              </li>
-              <li className="list">Solutions</li>
-              <li className="list" onClick={() => Navigate("./aboutcompany")}>
-                Company
-              </li>
-              <li className="list">Devlopers</li>
-              <li
-                className="list CONTACT"
-                onClick={() => Navigate("./contact")}
-              >
-                Contact Us
-              </li>
-              <li className="log-btn">Log-In</li>
+              <div className="drawer_view">
+                <li className="list" onClick={() => Navigate("./")}>
+                  Platform
+                </li>
+                <li className="list">Solutions</li>
+                <li className="list" onClick={() => Navigate("./aboutcompany")}>
+                  Company
+                </li>
+                <li className="list">Devlopers</li>
+                <li
+                  className="list CONTACT"
+                  onClick={() => Navigate("./contact")}
+                >
+                  Contact Us
+                </li>
+                <li className="log-btn">Log-In</li>
+              </div>
             </ul>
           </div>
 
@@ -64,7 +67,7 @@ const Nav = () => {
                   width: "160px",
                   height: "auto",
                   fontSize: "12px",
-                  borderRadius: "40px",
+                  borderRadius: "14px",
                   background: "#452d85",
                 }}
                 endIcon={<Arrow />}
@@ -72,7 +75,13 @@ const Nav = () => {
               >
                 Request Demo
               </Button>
-              <button className="menu">
+
+              <button
+                className="menu"
+                onClick={(e) => {
+                  e.stopPropagation();
+                }}
+              >
                 {isMobile ? (
                   <CloseIcon
                     sx={{ fontSize: "small", padding: "2px", border: "none" }}
@@ -93,3 +102,29 @@ const Nav = () => {
   );
 };
 export default Nav;
+
+{
+  /* <SwipeableDrawer
+              anchor="left"
+              open={open}
+              onClose={toggleDrawer(false)}
+              onOpen={toggleDrawer(true)}
+              swipeAreaWidth={drawerBleeding}
+              disableSwipeToOpen={false}
+              ModalProps={{
+                keepMounted: true,
+              }}
+              sx={{ width: "300px" }}
+              variant="temporary"
+            >
+              <List sx={{ display: "flex", flexDirection: "column" }}>
+                {[
+                  "Platform",
+                  "Solutions",
+                  "Company",
+                  "Devlopers",
+                  "Contact Us",
+                ]}
+              </List>
+            </SwipeableDrawer> */
+}

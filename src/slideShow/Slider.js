@@ -1,56 +1,86 @@
-// import React from "react";
+import { toUnitless } from "@mui/material/styles/cssUtils";
+import React from "react";
+import Slider from "react-slick";
+import "./Sliders.css";
 
-// const Slider = () => {
-//   let box = document.querySelector(".image-container");
+const Sliders = ({ sliderData }) => {
+  if (!Array.isArray(sliderData) || sliderData.length <= 0) {
+    return null;
+  }
 
-//   const btnPrivious = () => {
-//     let width = box.clientWidth;
-//     box.scrollLeft = box.scrollLeft - width;
-//   };
-//   const btnNext = () => {
-//     let width = box.clientWidth;
-//     box.scrollLeft = box.scrollLeft + width;
-//   };
-//   return (
-//     <div className="img-slider">
-//       <div className="img-window">
-//         <div className="slider-container">
-//           <button className="lessthen" onClick={btnPrivious}>
-//             <p>&lt;</p>
-//           </button>
-//           <button className="greaterthen" onClick={btnNext}>
-//             <p>&gt;</p>
-//           </button>
+  const GalleryPrevArrow = ({ currentSlide, slideCount, ...props }) => {
+    const { className, onClick } = props;
 
-//           <div className="image-container">
-//             <div className="image-banner">
-//               <img src="./banner.png" />
-//             </div>
-//             <div className="image-banner">
-//               <img src="./banner.png" />
-//             </div>
-//             <div className="image-banner">
-//               <img src="./banner.png" />
-//             </div>
-//             <div className="image-banner">
-//               <img src="./banner.png" />
-//             </div>
-//             <div className="image-banner">
-//               <img src="./banner.png" />
-//             </div>
-//             <div className="image-banner">
-//               <img src="./banner.png" />
-//             </div>
-//             <div className="image-banner">
-//               <img src="./banner.png" />
-//             </div>
-//             <div className="image-banner">
-//               <img src="./banner.png" />
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-// export default Slider;
+    return (
+      <div {...props} className="custom-prevArrow" onClick={onClick}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+        </svg>
+      </div>
+    );
+  };
+  const GalleryNextArrow = ({ currentSlide, slideCount, ...props }) => {
+    const { className, onClick } = props;
+
+    return (
+      <div {...props} className="custom-nextArrow" onClick={onClick}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
+        </svg>
+      </div>
+    );
+  };
+
+  const settings = {
+    className: "center",
+    centerMode: true,
+    centerPadding: "100px",
+    focusOnSelect: true,
+    infinite: true,
+
+    slidesToShow: 3,
+    slidesToScroll1: 1,
+    speed: 500,
+    nextArrow: <GalleryNextArrow />,
+    prevArrow: <GalleryPrevArrow />,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          infinite: true,
+          centerMode: true,
+          centerPadding: "100px",
+          autoplaySpeed: 3000,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  return (
+    <div className="simple_slide_container">
+      <Slider {...settings}>
+        {sliderData.map((slide) => {
+          return (
+            <div className="image_slider_box">
+              <img src={slide.image} alt="slider" className="image" />
+            </div>
+          );
+        })}
+      </Slider>
+    </div>
+  );
+};
+
+export default Sliders;

@@ -6,8 +6,13 @@ import {
   VEGA_TEXTBOX_HEADER,
   VEGA_TEXTBOX_BODY,
 } from "../../APP_CONSTANTS_TEXT";
+import Sliders from "../../slideShow/Slider";
 import VegaPayTeam from "./team";
-import { VEGA_TEAM_IMG, VEGA_TEAM_SOCIAL_LOGO } from "../../IMAGE_CONSTANTS";
+import {
+  VEGA_TEAM_IMG,
+  VEGA_TEAM_SOCIAL_LOGO,
+  sliderData,
+} from "../../IMAGE_CONSTANTS";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Team from "./team";
 const VegaCompany = () => {
@@ -34,7 +39,7 @@ const VegaCompany = () => {
         <VegaPayCompany />
       </div>
       <div className="slideShow_box">
-        <SlideShow />
+        <Sliders sliderData={sliderData} />
       </div>
       <div className="team_container">
         <VegaPayTeam />

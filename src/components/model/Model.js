@@ -14,9 +14,7 @@ const VegaModal = () => {
   const handleChange = (event) => {
     setChecked(event.target.checked);
   };
-  const handleClose = () => {
-    setModal(false);
-  };
+
   return (
     <Modal
       open={true}
@@ -24,11 +22,22 @@ const VegaModal = () => {
       aria-labelledby="child-modal-title"
       aria-describedby="child-modal-description"
     >
-      <div className="Model-body ">
-        <div className="Model-container">
+      <div
+        className="Model-body "
+        onClick={() => setModal({ modal: false, modaldata: {} })}
+      >
+        <div className="Model-container" onClick={(e) => e.stopPropagation()}>
           <div className="body-one">
             <div className="model-logo">
               <img src="./VegaPay.png" />
+            </div>
+            <div className="sm_screen_cls_btn">
+              <button
+                className="close-btn-sm"
+                onClick={() => setModal({ modal: false })}
+              >
+                <CloseIcon />
+              </button>
             </div>
           </div>
           <div className="body-two">
