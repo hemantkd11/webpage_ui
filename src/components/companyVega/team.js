@@ -145,7 +145,9 @@ const VegaPayTeam = () => {
           <div className="teamImg-box">
             {Images.map((img, i) => (
               <div className="to_demo">
-                <div className="team-member">{img}</div>
+                <div className="team-member" key={i}>
+                  {img}
+                </div>
                 <div className="member-name">Puneet Sharma</div>
                 <div className="social-site-logo">
                   <div className="vector-in">

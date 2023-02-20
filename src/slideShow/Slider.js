@@ -65,15 +65,26 @@ const Sliders = ({ sliderData }) => {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 400,
+        settings: {
+          infinite: true,
+          autoplaySpeed: 3000,
+          centerMode: true,
+          centerPadding: "100px",
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
     ],
   };
 
   return (
     <div className="simple_slide_container">
       <Slider {...settings}>
-        {sliderData.map((slide) => {
+        {sliderData.map((slide, index) => {
           return (
-            <div className="image_slider_box">
+            <div key={index} className="image_slider_box">
               <img src={slide.image} alt="slider" className="image" />
             </div>
           );

@@ -21,8 +21,10 @@ const VegaCompany = () => {
       <div className="Header_Banner">
         <div className="header-conatiner-box">
           <div className="conatiner-box">
-            <div className="text text-two">
-              <div className="Header-text">{COMPANY_HEADER}</div>
+            <div className="text-two">
+              <div className="Header-text company_header2">
+                {COMPANY_HEADER}
+              </div>
               <div className="text-body">{COMPANY_BANNER_TEXT}</div>
             </div>
           </div>

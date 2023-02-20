@@ -51,10 +51,11 @@ const Nav = () => {
               <div className="LOG_BTN">
                 <Button
                   sx={{
-                    width: "auto",
+                    width: "100px",
                     padding: "5px",
                     height: "auto",
-                    fontSize: "12px",
+                    fontSize: "14px",
+                    padding: "4px 10px",
                   }}
                   variant="outlined"
                 >
@@ -69,6 +70,10 @@ const Nav = () => {
                   fontSize: "12px",
                   borderRadius: "14px",
                   background: "#452d85",
+                  padding: "6px 10px ",
+                  "&:hover": {
+                    background: "#20153e",
+                  },
                 }}
                 endIcon={<Arrow />}
                 variant="contained"

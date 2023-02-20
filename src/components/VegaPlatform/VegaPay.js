@@ -108,7 +108,7 @@ const VegaPowerPlatform = () => {
             alignItems: "center",
           }}
         >
-          <Grid div xs={6} padding={1}>
+          <Grid xs={6} padding={1}>
             <div className="platform_container gap">
               <div className="main_container">
                 <div className="logo-box">
@@ -121,7 +121,7 @@ const VegaPowerPlatform = () => {
               </div>
             </div>
           </Grid>
-          <Grid div xs={6} padding={1}>
+          <Grid xs={6} padding={1}>
             <div className="platform_container gap">
               <div className="main_container">
                 <div className="logo-box">
@@ -134,7 +134,7 @@ const VegaPowerPlatform = () => {
               </div>
             </div>
           </Grid>
-          <Grid div xs={6} padding={1}>
+          <Grid xs={6} padding={1}>
             <div className="platform_container gap">
               <div className="main_container">
                 <div className="logo-box">
@@ -147,7 +147,7 @@ const VegaPowerPlatform = () => {
               </div>
             </div>
           </Grid>
-          <Grid div xs={6} padding={1}>
+          <Grid xs={6} padding={1}>
             <div className="platform_container gap">
               <div className="main_container">
                 <div className="logo-box">
@@ -160,7 +160,7 @@ const VegaPowerPlatform = () => {
               </div>
             </div>
           </Grid>
-          <Grid div xs={6} padding={1}>
+          <Grid xs={6} padding={1}>
             <div className="platform_container gap">
               <div className="main_container">
                 <div className="logo-box">
@@ -173,7 +173,7 @@ const VegaPowerPlatform = () => {
               </div>
             </div>
           </Grid>
-          <Grid div xs={6} padding={1}>
+          <Grid xs={6} padding={1}>
             <div className="platform_container gap">
               <div className="main_container">
                 <div className="logo-box">

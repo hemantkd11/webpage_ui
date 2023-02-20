@@ -4,15 +4,17 @@
   list-style: none;
   box-sizing: border-box;
 }
-.container {
+.Container {
   width: 100%;
   z-index: 0;
+
+  padding: 80px 0px 0px 0px;
 }
 
 .Header_Banner {
   width: 100%;
   height: auto;
-  padding: 60px 0px 30px 0px;
+  padding: 50px 0px;
   background-color: #27274d;
   background-image: url("../public/background.png");
   background-repeat: no-repeat;
@@ -21,10 +23,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .header-conatiner-box {
   width: 80%;
-  height: 700px;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,18 +49,23 @@
   align-items: center;
 }
 .Header-text {
-  font-size: 2.1rem;
+  font-size: 3rem;
   letter-spacing: 0.5px;
   font-weight: 500;
+  flex-grow: 1;
 }
-
+.company_header2 {
+  font-size: 2.1rem;
+}
 .text-body {
-  font-size: 15px;
+  font-size: 1rem;
   letter-spacing: 0.8px;
+  line-height: 40px;
 }
 .text {
   text-shadow: 3px 4px 5px #1c1b1b;
   display: flex;
+
   flex-direction: column;
   gap: 10px;
 }
@@ -101,19 +109,19 @@
   width: 80%;
 }
 .text_header {
-  padding: 12px;
   color: #414198;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 3rem;
   text-align: center;
+  padding: 10px 0px;
 }
 .text_body {
   padding: 10px 0px 25px 0px;
   font-family: sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 17px;
+  line-height: 2rem;
+  font-size: 1rem;
   text-align: center;
   color: #656565;
 }
@@ -149,24 +157,29 @@
   padding: 10px;
 }
 .vega_works_details {
-  width: 50%;
+  width: 30%;
   padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .VegaWorks_heading {
-  font-size: 20px;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
 .work-logo {
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.work-space {
+  line-height: 30px;
+  font-size: 20px;
+}
 .vega_works_logo img {
-  width: 65%;
+  width: 100%;
 }
 
 .company-text {
@@ -215,7 +228,7 @@
 .VegaContact {
   width: 100%;
   height: auto;
-  padding: 30px 0px 30px 0px;
+  padding: 50px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -355,6 +368,7 @@ input {
 .team-container {
   width: 100%;
   display: flex;
+  padding: 50px 0px;
   justify-content: center;
 }
 .team-main-box {
@@ -394,7 +408,7 @@ input {
 .team-heading {
   box-sizing: border-box;
   font-size: 35px;
-  margin: 30px 0px 30px 0px;
+  padding: 0px 0px 10px 0px;
   color: #3e1f71;
   font-weight: 700;
   text-align: center;
@@ -585,6 +599,7 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px 0px;
 }
 .css-715d1t-MuiGrid-root {
   margin-left: 0px !important;
@@ -595,14 +610,11 @@ input {
     flex-basis: 100% !important;
     max-width: 100% !important;
   }
+  .text_header {
+    font-size: 2.3rem;
+  }
 }
 .vega-apply {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.VegaPay_platform {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -634,11 +646,13 @@ input {
 }
 .VegaPay_platform {
   width: 100%;
+  padding: 50px 0px;
   background: linear-gradient(100.24deg, #cee3e9 0.23%, #fdfdfd 150.44%);
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .logo-box {
   width: 80px;
   height: 80px;
@@ -660,6 +674,7 @@ credit
   width: 100%;
   display: flex;
   height: 250px;
+  padding: 50px 0px;
   align-items: center;
   justify-content: center;
   background: #e5e6ff;
@@ -753,6 +768,7 @@ credit
   }
   .Header_Banner {
     width: 100%;
+    padding: 50px 0px;
     height: auto;
     background-color: #0f0f3b;
     background-image: url("../public/background.png");
@@ -801,7 +817,7 @@ credit
   .VegaCredit {
     width: 100%;
     display: flex;
-    padding: 10px 0px 10px 0px;
+
     height: auto;
     align-items: center;
     justify-content: center;
@@ -833,6 +849,9 @@ credit
   .credit-flex {
     display: flex;
     font-size: 0.8rem;
+  }
+  .text {
+    width: 100%;
   }
 }
 
@@ -936,7 +955,7 @@ credit
   }
   .text-comp {
     text-align: center;
-    font-size: 10px;
+    font-size: 0.9rem;
   }
   .text_header {
     font-size: 25px;
@@ -947,6 +966,7 @@ credit
   }
   .text-body {
     font-size: 0.9rem;
+    line-height: 23px;
   }
   .img-credit {
     padding: 10px;
