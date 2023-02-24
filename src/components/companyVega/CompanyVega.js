@@ -20,7 +20,7 @@ const VegaCompany = () => {
     <div className="Container">
       <div className="Header_Banner">
         <div className="header-conatiner-box">
-          <div className="conatiner-box">
+          <div className="container-box">
             <div className="text-two">
               <div className="Header-text company_header2">
                 {COMPANY_HEADER}
@@ -29,7 +29,7 @@ const VegaCompany = () => {
             </div>
           </div>
 
-          <div className=" conatiner-box">
+          <div className=" container-box">
             <div className="mobile-logo">
               <img src="./mobile-logo2.png" alt="Mobile logo" />
             </div>
