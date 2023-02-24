@@ -9,6 +9,7 @@ import VegaModel from "./components/model/Model";
 
 import Nav from "./components/navigationBar/Nav";
 import SlideShow from "./slideShow/slide";
+
 // import VegaModal from "./components/model/Model";
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
           <Route path="/aboutcompany" element={<VegaCompany />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/modal" element={<VegaModel />} />
-
+          <Route path="/slider" element={<Slider></Slider>} />
           <Route path="/slide" element={<SlideShow />}></Route>
         </Routes>
         <Footer />

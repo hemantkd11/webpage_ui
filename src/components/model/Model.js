@@ -14,25 +14,42 @@ const VegaModal = () => {
   const handleChange = (event) => {
     setChecked(event.target.checked);
   };
-  const handleClose = () => {
-    setModal(false);
-  };
+
   return (
-    <Modal open={true} onClose={() => setModal({ modal: false })}>
-      <div className="Model-body ">
-        <div className="Model-container">
+    <Modal
+      open={true}
+      onClose={() => setModal({ modal: false, modaldata: {} })}
+      aria-labelledby="child-modal-title"
+      aria-describedby="child-modal-description"
+    >
+      <div
+        className="Model-body "
+        onClick={() => setModal({ modal: false, modaldata: {} })}
+      >
+        <div className="Model-container" onClick={(e) => e.stopPropagation()}>
           <div className="body-one">
             <div className="model-logo">
               <img src="./VegaPay.png" />
             </div>
+            <div className="sm_screen_cls_btn">
+              <button
+                className="close-btn-sm"
+                onClick={() => setModal({ modal: false })}
+              >
+                <CloseIcon />
+              </button>
+            </div>
           </div>
           <div className="body-two">
-            <button
-              className="close-btn"
-              onClick={() => setModal({ modal: false })}
-            >
-              <CloseIcon />
-            </button>
+            <div className="close_btn_box">
+              <button
+                className="close-btn"
+                onClick={() => setModal({ modal: false })}
+              >
+                <CloseIcon />
+              </button>
+            </div>
+
             <div className="input-field">
               <div className="sub-input flex">
                 <label className="subject input-label">Full Name</label>
@@ -45,7 +62,7 @@ const VegaModal = () => {
               </div>
               <div className="sub-input flex">
                 <label className="subject input-label">
-                  Enter yur Organization Email
+                  Enter your Organization Email
                 </label>
 
                 <input

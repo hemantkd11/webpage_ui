@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import React from "react";
 import EastIcon from "@mui/icons-material/East";
-import Arrow from "@mui/icons-material/ArrowForwardIos"
+import Arrow from "@mui/icons-material/ArrowForwardIos";
 import "./footer.css";
 const Footer = () => {
   return (
@@ -33,7 +33,7 @@ const Footer = () => {
                   <div className="padding font">LOS</div>
                   <div className="padding font">LMS</div>
                   <div className="padding font">Payouts</div>
-                  <div className="text-color footer-gap">
+                  <div className="text-color footer-gap solution_box">
                     <p>Solutions</p>
 
                     <div className="text-shade">Co-brand credit</div>
@@ -52,19 +52,19 @@ const Footer = () => {
                   <div>
                     <Button
                       sx={{
-                        width: "70%",
+                        width: "100%",
                         height: "20px",
                         fontSize: "8px",
                         background: " #fff",
                         color: "black",
                         borderRadius: "0",
-                        position:'unset',
-                        letterSpacing:'0px',
-                        lineHeight:'8px',
-                        textTransform:'none'
+                        position: "unset",
+                        letterSpacing: "0px",
+                        lineHeight: "8px",
+                        textTransform: "none",
                       }}
                       variant="contained"
-                      endIcon={<Arrow sx={{width:'15px'}}/>}
+                      endIcon={<Arrow sx={{ width: "15px" }} />}
                     >
                       Request Demo
                     </Button>
@@ -82,8 +82,8 @@ const Footer = () => {
               </div>
               <div className="email-box">
                 <div className="email-text-field">
-                  Email - gaurav@vegapay.tech Contact No - +91 99303 28780
-                
+                  <div>Email - gaurav@vegapay.tech</div>
+                  <div>Contact No - +91 99303 28780</div>
                 </div>
                 <div className="vega-tech">
                   © VegaPay technology private limited

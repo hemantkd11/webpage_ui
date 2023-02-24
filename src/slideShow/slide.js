@@ -5,11 +5,12 @@ import "slick-carousel/slick/slick-theme.css";
 const SlideShow = () => {
   const settings = {
     className: "center",
+    centerMode: true,
+    centerPadding: "100px",
     arrows: false,
     dots: true,
     infinite: true,
     autoplay: true,
-
     speed: 2000,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -18,6 +19,8 @@ const SlideShow = () => {
         breakpoint: 1050,
         settings: {
           infinite: true,
+          centerMode: true,
+          centerPadding: "150px",
           autoplaySpeed: 3000,
           slidesToShow: 2,
           slidesToScroll: 1,

@@ -1,16 +1,21 @@
-.container {
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.Container {
   width: 100%;
   z-index: 0;
+
+  padding: 80px 0px 0px 0px;
 }
-.header-conatiner-box {
-  width: 80%;
-  display: flex;
-  align-items: center;
-}
+
 .Header_Banner {
   width: 100%;
-  height: 675px;
-  background-color: #0f0f3b;
+  height: auto;
+  padding: 50px 0px;
+  background-color: #27274d;
   background-image: url("../public/background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +23,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
+.header-conatiner-box {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .mobile-logo img {
   width: 100%;
   flex: 1;
@@ -35,62 +49,49 @@
   align-items: center;
 }
 .Header-text {
-  font-size: 36px;
+  font-size: 3rem;
   letter-spacing: 0.5px;
+  font-weight: 500;
+  flex-grow: 1;
+}
+.company_header2 {
+  font-size: 2.1rem;
+}
+.text-body {
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+  line-height: 40px;
+}
+.text {
+  text-shadow: 3px 4px 5px #1c1b1b;
+  display: flex;
+
+  flex-direction: column;
+  gap: 10px;
+}
+.text-two {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media only screen and (max-width: 1300px) {
+  .Header-text {
+    font-size: 1.4rem;
+  }
+  .text-body {
+    font-size: 0.8rem;
+  }
 }
 
-.text-body {
-  font-size: 15px;
-  letter-spacing: 0.8px;
-}
-@media only screen and (max-width: 750px) {
-  .text-body {
-    font-size: 10px;
-  }
-  .Header-text {
-    font-size: 20px;
-  }
-  .Header_Banner {
-    width: 100%;
-    height: 500px;
-    background-color: #0f0f3b;
-    background-image: url("../public/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .mobile.logo {
-    width: 100px;
-  }
-  .contact-email-logo {
-    
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .Header-text {
-    font-size: 12px;
-  }
-  .text-body {
-    font-size: 7px;
-  }
-}
 .header_btn {
   padding: 10px;
   border-radius: 0;
 }
 .text-comp {
   width: 100%;
-   flex: 1;
-   font-size: 0.7rem;
-   
+  flex: 1;
+  font-size: 0.8rem;
+  color: rgb(70, 68, 68);
 }
 .container_box {
   width: 100%;
@@ -108,19 +109,19 @@
   width: 80%;
 }
 .text_header {
-  padding: 12px;
   color: #414198;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 3rem;
   text-align: center;
+  padding: 10px 0px;
 }
 .text_body {
   padding: 10px 0px 25px 0px;
   font-family: sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 17px;
+  line-height: 2rem;
+  font-size: 1rem;
   text-align: center;
   color: #656565;
 }
@@ -128,7 +129,7 @@
 .heading {
   box-sizing: border-box;
   font-size: 25px;
- color: #3e1f71;
+  color: #3e1f71;
 }
 
 .Vegaworks {
@@ -137,6 +138,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 .VegaWork_Container {
   display: flex;
@@ -146,6 +148,7 @@
 
   background-size: 400px 500px;
 }
+
 .vega_works_logo {
   width: 100%;
   display: flex;
@@ -154,24 +157,29 @@
   padding: 10px;
 }
 .vega_works_details {
-  width: 50%;
+  width: 30%;
   padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .VegaWorks_heading {
-  font-size: 20px;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
 .work-logo {
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.work-space {
+  line-height: 30px;
+  font-size: 20px;
+}
 .vega_works_logo img {
-  width: 65%;
+  width: 100%;
 }
 
 .company-text {
@@ -217,30 +225,10 @@
   padding-bottom: 20px;
   color: #414198;
 }
-@media only screen and (max-width: 800px) {
-  .vega_works_logo img {
-    width: 120%;
-  }
- .member-name{
-  font-size: 0.2rem;
-  text-align: center;
- }
- .company_header {
-  gap: 10px;
-  text-align: center;
-
-}
-.vegacompany-header {
-  font-size: 15px;
-  font-weight: 700;
-  padding-bottom: 10px;
-  color: #414198;
-}
-}
 .VegaContact {
   width: 100%;
   height: auto;
-  padding: 30px 0px 30px 0px ;
+  padding: 50px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -282,6 +270,9 @@
   display: flex;
   text-align: center;
 }
+.center-text {
+  text-align: center;
+}
 
 .temp {
   display: flex;
@@ -289,9 +280,11 @@
   font-size: 20px;
   justify-content: center;
 }
+
+/* contact box*/
 .contact-container {
   width: 100%;
-  height: 750px;
+  height: 800px;
   background: url("../public/background.png"),
     linear-gradient(95.73deg, #1f1133 4.56%, #1e1420 95.43%);
 
@@ -303,26 +296,25 @@
   justify-content: center;
 }
 .contact-box {
-  width: 40%;
+  max-width: 600px;
   height: auto;
-  padding: 0px 0 20px 0px;
   border-radius: 10px;
   display: flex;
   color: black;
-  padding: 20px;
+  padding: 5pxpx;
   justify-content: center;
   background-color: white;
 }
-.first_lastName-box{
+.first_lastName-box {
   width: 100%;
   display: flex;
   gap: 5px;
   flex-direction: row;
 }
-.contact-box-flex{
+.contact-box-flex {
   display: flex;
   width: 100%;
-  flex: 1;
+
   justify-content: center;
   gap: 10px;
   box-sizing: border-box;
@@ -334,11 +326,11 @@
 .flex {
   width: 100%;
   display: flex;
-  padding: 5px;
+  padding: 1px;
   flex-direction: column;
 }
-.flex-1 {
-  width: 50%;
+ol .flex-1 {
+  width: 45%;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -346,12 +338,14 @@
 
 .input-label {
   padding: 5px;
+  font-size: 1rem;
+  font-weight: 500;
 }
 .form {
   padding: 20px;
   width: 100%;
   display: flex;
-  gap:10px;
+  gap: 10px;
   align-items: center;
   flex-direction: column;
   flex: 1;
@@ -374,6 +368,7 @@ input {
 .team-container {
   width: 100%;
   display: flex;
+  padding: 50px 0px;
   justify-content: center;
 }
 .team-main-box {
@@ -392,35 +387,50 @@ input {
   gap: 10px;
 }
 .team-img img {
-  width: 100%;
+  width: 70%;
 }
 .teamImg-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   flex: 1;
 }
+.to_demo {
+  padding: 10px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .team-heading {
   box-sizing: border-box;
   font-size: 35px;
-  margin: 30px 0px 30px 0px ;
+  padding: 0px 0px 10px 0px;
   color: #3e1f71;
   font-weight: 700;
   text-align: center;
- display: flex;
- align-items: center;
- justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .vector-in {
   width: 20px;
   height: 20px;
   text-align: center;
   background: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 100%;
 }
-.vector-in img{
+.vector-in img {
   width: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .member-name {
   display: flex;
@@ -431,11 +441,15 @@ input {
 .team-member {
   display: flex;
   flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 .social-site-logo {
   display: flex;
   padding: 5px;
   gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 .model-body {
   display: flex;
@@ -446,14 +460,30 @@ input {
   justify-content: center;
 }
 @media only screen and (max-width: 550px) {
+  .member-name {
+    font-size: 0.7rem;
+    text-align: center;
+  }
 
- .member-name{
-  font-size: 0.7rem;
-  text-align: center;
- }
+  .to_demo {
+    padding: 5px;
+  }
+  .team-heading {
+    font-size: 1.5rem;
+  }
+  /* .vector-in {
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+  } */
 }
-@media only screen and (max-width: 650px){
-  .css-xac76q-MuiButtonBase-root-MuiButton-root{
+@media only screen and (max-width: 650px) {
+  .css-xac76q-MuiButtonBase-root-MuiButton-root {
     padding: 6px 16px;
   }
 }
@@ -500,7 +530,7 @@ input {
   background-color: rgba(188, 179, 179, 0.436);
   box-shadow: 0px 0px 10px 1px black;
   border-radius: 10px;
-  color: rgb(195, 51, 51);
+  color: rgb(225, 216, 216);
   width: 50px;
   height: 50px;
   cursor: pointer;
@@ -522,56 +552,29 @@ input {
   display: flex;
 }
 
-
 /* slide container*/
 
-.slick-slide{
-  display: flex;
-  width: 100px;
-  text-align: center;
-  align-items: center;
-  height: 350px;
-  border: none !important;
-  justify-content: center;
-}
-.slick-initialized .slick-slide{
+/* .slick-initialized .slick-slide {
   display: flex !important;
   flex-direction: row !important;
   align-items: center;
   justify-content: center;
-  height: 300px;
-
-}
-.slick-slide div{
+} */
+.slick-slide div {
   outline: none;
 }
-.slideShow_box{
-  width: 100%;
-  background-color:  #0f0f3b;
-  overflow: hidden;
+.slideShow_box {
+  background-color: #0f0f3b;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.simple_slide_box{
-  width: 80%;
-  overflow: hidden
+.slideShow_bo {
+  background-color: #0f0f3b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.slide_container{
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-  height: 300px;
-  margin: 30px 0px 15px 0px;
-}
-
-.img_slide_box img{
-  position:unset;
- width: 250px;
- z-index: 10;
-}
-
 
 /* platform css */
 .Platform-container {
@@ -596,16 +599,22 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px 0px;
 }
-@media only screen and (max-width: 800px) {
+.css-715d1t-MuiGrid-root {
+  margin-left: 0px !important;
+}
+@media only screen and (max-width: 900px) {
+  .css-y9ylp1-MuiGrid-root {
+    -webkit-flex-basis: 100% !important;
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+  }
+  .text_header {
+    font-size: 2.3rem;
+  }
 }
 .vega-apply {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.VegaPay_platform {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -622,9 +631,14 @@ input {
   font-size: 12px;
   background-color: rgb(252, 252, 252);
 }
-
+.main_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100px;
+}
 .platform-box-heading {
-  font-size: 20px ;
+  font-size: 20px;
   font-weight: 600;
 }
 .grid {
@@ -632,19 +646,26 @@ input {
 }
 .VegaPay_platform {
   width: 100%;
+  padding: 50px 0px;
   background: linear-gradient(100.24deg, #cee3e9 0.23%, #fdfdfd 150.44%);
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .logo-box {
-  width: 30px;
-  height: 30px;
+  width: 80px;
+  height: 80px;
   padding: 20px;
   border-radius: 100%;
   display: flex;
   box-shadow: 1px 1px 37px 4px lightgray;
   justify-content: center;
+}
+.contained {
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
 }
 /*
 credit
@@ -653,6 +674,7 @@ credit
   width: 100%;
   display: flex;
   height: 250px;
+  padding: 50px 0px;
   align-items: center;
   justify-content: center;
   background: #e5e6ff;
@@ -681,18 +703,16 @@ credit
   border-radius: 10px;
   width: 100%;
   display: flex;
-
 }
-
 
 .img-credit {
   display: flex;
   background: linear-gradient(101.23deg, #ffffff 0%, #ffffff 100%);
-  border: 0.406736px solid #dedede; 
+  border: 0.406736px solid #dedede;
   height: 60px;
-  width: 150px;
+  width: 169px;
   flex: 1;
-   gap: 15%;
+  gap: 15%;
   align-items: center;
   justify-content: center;
   border-radius: 6px;
@@ -711,15 +731,15 @@ credit
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 25px;
+  width: 33px;
+  height: 30px;
   box-shadow: 0px 0px 8px -2px #4d4b4b;
   border-radius: 50%;
   background-color: white;
   padding: 0px 5px 0px 5px;
 }
-.credit-logo img{
- background-size: 1vw;
+.credit-logo img {
+  background-size: 1vw;
 }
 
 .credit-details {
@@ -730,21 +750,62 @@ credit
 }
 .credit-content {
   display: flex;
-  
+
   width: 100%;
   gap: 10px;
   align-items: center;
   justify-content: center;
 }
-.credit-flex{
+.credit-flex {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
 }
+@media only screen and (max-width: 850px) {
+  .conatiner-box {
+    width: 100%;
+  }
+  .Header_Banner {
+    width: 100%;
+    padding: 50px 0px;
+    height: auto;
+    background-color: #0f0f3b;
+    background-image: url("../public/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
 
-
-@media only screen and (max-width: 750px) {
+    align-items: center;
+    justify-content: center;
+  }
+  .header-conatiner-box {
+    display: flex;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .Header-text {
+    font-size: 2.3rem;
+  }
+  .text-body {
+    font-size: 1rem;
+  }
+  .mobile.logo-two {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile.logo-two img {
+    width: 50%;
+  }
+  .contact-email-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
   .credit-box {
     width: 80%;
     border-radius: 10px;
@@ -752,18 +813,11 @@ credit
     display: flex;
     justify-content: center;
     gap: 10px;
-
-   
   }
-  .platform-box-heading {
-    font-size: 15px ;
-    font-weight: 600;
-  }
-
   .VegaCredit {
     width: 100%;
     display: flex;
-    padding: 10px 0px 10px 0px;
+
     height: auto;
     align-items: center;
     justify-content: center;
@@ -780,7 +834,6 @@ credit
   .credit-content {
     display: flex;
     flex-direction: column;
-    flex: 1;
     width: 100%;
     gap: 10px;
     align-items: center;
@@ -788,16 +841,70 @@ credit
   }
   .img-credit {
     padding: 10px;
-    
+    width: 198px;
   }
   .credit-header {
-
     width: 100%;
-  
   }
-  
+  .credit-flex {
+    display: flex;
+    font-size: 0.8rem;
+  }
+  .text {
+    width: 100%;
+  }
 }
-@media only screen and (max-width:450px) {
+
+@media only screen and (max-width: 800px) {
+  .vega_works_logo img {
+    width: 120%;
+  }
+  .member-name {
+    font-size: 0.6rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .company_header {
+    gap: 10px;
+    text-align: center;
+  }
+  .vegacompany-header {
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    color: #414198;
+  }
+
+  /* vega work*/
+  .VegaWork_Container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    background-size: 400px 500px;
+  }
+  .flex-box {
+    width: 100%;
+  }
+  .vega_works_details {
+    width: 100%;
+  }
+  .work-space {
+    font-size: 0.8rem;
+  }
+  .VegaWorks_heading {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .platform-box-heading {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 450px) {
   .platform_container {
     display: flex;
     align-items: center;
@@ -811,39 +918,104 @@ credit
     font-size: 12px;
     background-color: rgb(252, 252, 252);
   }
+  .main_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    height: auto;
+
+    background-color: rgb(252, 252, 252);
+  }
   .platform-box-heading {
-    font-size: 12px ;
+    font-size: 12px;
     font-weight: 600;
   }
 
   .logo-box {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 46px;
     padding: 10px;
     border-radius: 100%;
     display: flex;
     box-shadow: 1px 1px 37px 4px lightgray;
     justify-content: center;
   }
-  .logo-box img{
-     width: 30px;
-     padding: auto;
+  .logo-box img {
+    width: 30px;
+    padding: auto;
   }
-  .contained{
+  .contained {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     justify-content: center;
   }
-  .text-comp{
+  .text-comp {
     text-align: center;
-    font-size: 10px;
+    font-size: 0.9rem;
   }
-  .text_header{
+  .text_header {
     font-size: 25px;
   }
-  .text_body{
-    font-size: 12px;
+
+  .Header-text {
+    font-size: 1.4rem;
+  }
+  .text-body {
+    font-size: 0.9rem;
+    line-height: 23px;
+  }
+  .img-credit {
+    padding: 10px;
+    width: 100%;
+  }
+  .credit-flex {
+    text-align: center;
   }
 }
+.team_container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff !important;
+}
+
+/*teams */
+.simple_slide_box_teams {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.slide_container_teams {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  align-items: center;
+}
+/* .slick-slide {
+  display: flex !important;
+  width: 300px;
+  text-align: center;
+  align-items: center;
+  height: 350px;
+  border: none !important;
+  flex-direction: row !important;
+  justify-content: center;
+} */
+/* .slick-initialized .slick-slide {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+} */
+/* .slick-slide div {
+  outline: none;
+} */
+/*teams end*/
