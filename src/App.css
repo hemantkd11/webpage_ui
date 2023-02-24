@@ -14,7 +14,7 @@
 .Header_Banner {
   width: 100%;
   height: auto;
-  padding: 50px 0px;
+  /* padding: 50px 0px; */
   background-color: #27274d;
   background-image: url("../public/background.png");
   background-repeat: no-repeat;
