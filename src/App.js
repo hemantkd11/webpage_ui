@@ -23,7 +23,6 @@ function App() {
           <Route path="/aboutcompany" element={<VegaCompany />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/modal" element={<VegaModel />} />
-          <Route path="/slider" element={<Slider></Slider>} />
           <Route path="/slide" element={<SlideShow />}></Route>
         </Routes>
         <Footer />

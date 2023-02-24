@@ -40,31 +40,35 @@ const VegaPay = () => {
     <div className="Container">
       <div className="Header_Banner">
         <div className="header-conatiner-box">
-          <div className="text">
-            <div className="Header-text">{VEGA_PLATFORM_HEADER}</div>
-            <p className="text-body">{VEGA_PLATFORM_SUB_HEADER}</p>
-            <Button
-              sx={{
-                width: "150px",
-                background: " #ffffff",
-                color: " #36285B",
-                borderRadius: "1px",
-                padding: "10px",
+          <div className="container-box">
+            <div className="text">
+              <div className="Header-text">{VEGA_PLATFORM_HEADER}</div>
+              <p className="text-body">{VEGA_PLATFORM_SUB_HEADER}</p>
+              <Button
+                sx={{
+                  width: "150px",
+                  background: " #ffffff",
+                  color: " #36285B",
+                  borderRadius: "1px",
+                  padding: "10px",
 
-                position: "unset",
+                  position: "unset",
 
-                fontSize: "12px",
-              }}
-              onClick={() => setModal({ modal: "ADD_MODEL" })}
-              variant="contained"
-              endIcon={<Arrow />}
-            >
-              Request Demo
-            </Button>
+                  fontSize: "12px",
+                }}
+                onClick={() => setModal({ modal: "ADD_MODEL" })}
+                variant="contained"
+                endIcon={<Arrow />}
+              >
+                Request Demo
+              </Button>
+            </div>
           </div>
 
-          <div className="mobile-logo">
-            <img src={VEGA_PLATFORM_BANNER} alt="Mobile logo" />
+          <div className="container-box">
+            <div className="mobile-logo">
+              <img src={VEGA_PLATFORM_BANNER} alt="Mobile logo" />
+            </div>
           </div>
         </div>
       </div>
