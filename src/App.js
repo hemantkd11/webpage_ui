@@ -17,10 +17,10 @@ function App() {
         <Nav />
 
         <Routes>
-          <Route path="/" element={<VegaPay />} />
-          <Route path="/aboutcompany" element={<VegaCompany />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/modal" element={<VegaModel />} />
+          <Route path="/ui_webpage/" element={<VegaPay />} />
+          <Route path="/ui_webpage/aboutcompany" element={<VegaCompany />} />
+          <Route path="/ui_webpage/contact" element={<Contact />} />
+          <Route path="/ui_webpage/modal" element={<VegaModel />} />
           <Route path="/slide" element={<SlideShow />}></Route>
         </Routes>
         <Footer />
