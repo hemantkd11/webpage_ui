@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import React from "react";
-import EastIcon from "@mui/icons-material/East";
+
 import Arrow from "@mui/icons-material/ArrowForwardIos";
 import "./footer.css";
 const Footer = () => {
@@ -53,6 +53,7 @@ const Footer = () => {
                     <Button
                       sx={{
                         width: "100%",
+                        maxWidth: "100px",
                         height: "20px",
                         fontSize: "8px",
                         background: " #fff",
@@ -62,6 +63,7 @@ const Footer = () => {
                         letterSpacing: "0px",
                         lineHeight: "8px",
                         textTransform: "none",
+                        padding: "5px 3px",
                       }}
                       variant="contained"
                       endIcon={<Arrow sx={{ width: "15px" }} />}
