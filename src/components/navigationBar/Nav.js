@@ -16,7 +16,7 @@ const Nav = () => {
       <div className="navbar">
         <div className="nav-list-box">
           <div className="nav-logo-box">
-            <div className="logo" onClick={() => Navigate("./")}>
+            <div className="logo" onClick={() => Navigate("./ui_webpage/")}>
               VegaPay
             </div>
           </div>
@@ -27,17 +27,20 @@ const Nav = () => {
               onClick={() => setIsMobile(false)}
             >
               <div className="drawer_view">
-                <li className="list" onClick={() => Navigate("./")}>
+                <li className="list" onClick={() => Navigate("./ui_webpage/")}>
                   Platform
                 </li>
                 <li className="list">Solutions</li>
-                <li className="list" onClick={() => Navigate("./aboutcompany")}>
+                <li
+                  className="list"
+                  onClick={() => Navigate("./ui_webpage/aboutcompany")}
+                >
                   Company
                 </li>
                 <li className="list">Devlopers</li>
                 <li
                   className="list CONTACT"
-                  onClick={() => Navigate("./contact")}
+                  onClick={() => Navigate("./ui_webpage/contact")}
                 >
                   Contact Us
                 </li>
