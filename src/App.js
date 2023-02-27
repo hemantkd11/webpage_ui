@@ -19,7 +19,7 @@ function App() {
         <Nav />
 
         <Routes>
-          <Route path="/" element={<VegaPay />} />
+          <Route path="./" element={<VegaPay />} />
           <Route path="/aboutcompany" element={<VegaCompany />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/modal" element={<VegaModel />} />
