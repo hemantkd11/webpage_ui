@@ -36,6 +36,7 @@ import {
 
 const VegaPay = () => {
   const { setModal } = useModal(false);
+
   return (
     <div className="Container">
       <div className="Header_Banner">
