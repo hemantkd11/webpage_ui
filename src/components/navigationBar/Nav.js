@@ -5,9 +5,12 @@ import Arrow from "@mui/icons-material/ArrowForwardIos";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
+import useModal from "../context/ModelContext";
 import "./nav.css";
 
 const Nav = () => {
+  const { setModal } = useModal(false);
+
   const Navigate = useNavigate();
   const [isMobile, setIsMobile] = useState(false);
 
@@ -80,6 +83,7 @@ const Nav = () => {
                 }}
                 endIcon={<Arrow />}
                 variant="contained"
+                onClick={() => setModal({ modal: "ADD_MODEL" })}
               >
                 Request Demo
               </Button>

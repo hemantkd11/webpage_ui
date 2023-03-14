@@ -1,9 +1,10 @@
 import { Button } from "@mui/material";
 import React from "react";
-
+import useModal from "../context/ModelContext";
 import Arrow from "@mui/icons-material/ArrowForwardIos";
 import "./footer.css";
 const Footer = () => {
+  const setModal = useModal(false);
   return (
     <div className="footer_container">
       <div className="footer-box">
@@ -65,6 +66,7 @@ const Footer = () => {
                         textTransform: "none",
                         padding: "5px 3px",
                       }}
+                      onClick={() => setModal(true)}
                       variant="contained"
                       endIcon={<Arrow sx={{ width: "15px" }} />}
                     >
