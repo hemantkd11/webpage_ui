@@ -49,4 +49,4 @@ export const CONTACT_INFO_HEADER = `Contact Us`;
 export const CONTACT_INFO_TEXT = ` Launch next gen credit programs in less than 7 days`;
 
 export const Web_WROK_TEXT = `Then each item is sent by the Web server to the Web browser and Web browser collects all this information and displays them in the form of Web page. In Short`;
-export const Web_WORK_HEADER = `How WebPage works ?`;
+export const Web_WORK_HEADER = `WebPage works ?`;
