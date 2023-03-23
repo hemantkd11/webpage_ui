@@ -88,9 +88,9 @@ const WebPage = () => {
       <div className="Webworks">
         <WebWorks />
       </div>
-      <div className="WebContact">
+      {/* <div className="WebContact">
         <WebContactInfo />
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -211,18 +211,18 @@ const WebPowerPlatform = () => {
     </div>
   );
 };
-const WebContactInfo = () => {
-  return (
-    <div className="contact-info">
-      <div className="contact-box-temp">
-        <div className="contact-email-logo">
-          <div className="email-logo">
-            <MailOutlineIcon />
-          </div>
-          <div className="center-text">{CONTACT_INFO_HEADER}</div>
-        </div>
-        <div className="temp center-text">{CONTACT_INFO_TEXT}</div>
-      </div>
-    </div>
-  );
-};
+// const WebContactInfo = () => {
+//   return (
+//     <div className="contact-info">
+//       <div className="contact-box-temp">
+//         <div className="contact-email-logo">
+//           <div className="email-logo">
+//             <MailOutlineIcon />
+//           </div>
+//           <div className="center-text">{CONTACT_INFO_HEADER}</div>
+//         </div>
+//         <div className="temp center-text">{CONTACT_INFO_TEXT}</div>
+//       </div>
+//     </div>
+//   );
+// };
