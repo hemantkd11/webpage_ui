@@ -19,7 +19,7 @@ const Nav = () => {
       <div className="navbar">
         <div className="nav-list-box">
           <div className="nav-logo-box">
-            <div className="logo" onClick={() => Navigate("./ui_webpage/")}>
+            <div className="logo" onClick={() => Navigate("./webpage_ui/")}>
               WebPage
             </div>
           </div>
@@ -30,20 +30,20 @@ const Nav = () => {
               onClick={() => setIsMobile(false)}
             >
               <div className="drawer_view">
-                <li className="list" onClick={() => Navigate("./ui_webpage/")}>
+                <li className="list" onClick={() => Navigate("./webpage_ui/")}>
                   Platform
                 </li>
                 <li className="list">Solutions</li>
                 <li
                   className="list"
-                  onClick={() => Navigate("./ui_webpage/aboutcompany")}
+                  onClick={() => Navigate("./webpage_ui/aboutcompany")}
                 >
                   Company
                 </li>
                 <li className="list">Devlopers</li>
                 <li
                   className="list CONTACT"
-                  onClick={() => Navigate("./ui_webpage/contact")}
+                  onClick={() => Navigate("./webpage_ui/contact")}
                 >
                   Contact Us
                 </li>
@@ -85,7 +85,7 @@ const Nav = () => {
                 variant="contained"
                 onClick={() => setModal({ modal: "ADD_MODEL" })}
               >
-                Request Demo
+                Register
               </Button>
 
               <button

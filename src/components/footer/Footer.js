@@ -13,12 +13,12 @@ const Footer = () => {
           <div className="footer-details">
             <div className="text-footer-right flexBox">
               <div className="WebPagement-solution">
-                WebPage is the only payments solution in India that allows
-                businesses to accept, process and disburse payments with its
-                product suite. It gives you access to all payment modes
-                including credit card, debit card, netbanking, UPI and popular
-                wallets including JioMoney, Mobikwik, Airtel Money, FreeCharge,
-                Ola Money and PayZapp.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aliquam adipisci repellat molestias temporibus illum ad, error
+                modi odio eveniet ullam, perspiciatis eaque! Obcaecati iure
+                optio minus voluptate laudantium expedita ipsam quae dignissimos
+                reiciendis, explicabo autem eum veritatis at perferendis
+                distinctio ipsa.
               </div>
               <div className="Flex-for-Row">
                 <p className="text-color">Privacy Podivcy</p>
@@ -31,14 +31,14 @@ const Footer = () => {
                 <div className="footer-content footer-mid-box">
                   <div className="text-color">Platform</div>
                   <div className="padding font ">Overview</div>
-                  <div className="padding font">LOS</div>
-                  <div className="padding font">LMS</div>
-                  <div className="padding font">Payouts</div>
+                  <div className="padding font">WEB</div>
+                  <div className="padding font">WEB</div>
+                  <div className="padding font">Webpage</div>
                   <div className="text-color footer-gap solution_box">
                     <p>Solutions</p>
 
-                    <div className="text-shade">Co-brand credit</div>
-                    <p className="text-shade">BNPL</p>
+                    <div className="text-shade">Web_page </div>
+                    <p className="text-shade">WEB</p>
                   </div>
                 </div>
                 <div className="footer-divst footer-mid-box">
@@ -70,7 +70,7 @@ const Footer = () => {
                       variant="contained"
                       endIcon={<Arrow sx={{ width: "15px" }} />}
                     >
-                      Request Demo
+                      Register
                     </Button>
                   </div>
                 </div>
@@ -80,18 +80,15 @@ const Footer = () => {
             <div className="address-box flexBox text-footer-left">
               <div className="WebPagement-solution">
                 <div className="text-color">ADDRESS</div> <br />
-                REGD. OFFICE ADDRESS WebPage Software Private divmited, 1st
-                Floor, SJR Cyber, 22 Laskar Hosur Road, Adugodi, Bengaluru,
-                560030, Karnataka, India CIN: U72200KA2013PTC097389
+                REGD. OFFICE ADDRESS WebPage Private Limited, Ksr , wind Tunel
+                Road, Murgeshpalya, Bengaluru, 560017, Karnataka, India
               </div>
               <div className="email-box">
                 <div className="email-text-field">
-                  <div>Email - gaurav@WebPage.tech</div>
-                  <div>Contact No - +91 99303 28780</div>
+                  <div>Email - diwakarhemant@gmail.com</div>
+                  <div>Contact No - +91 799 081 6443 </div>
                 </div>
-                <div className="Web-tech">
-                  © WebPage technology private limited
-                </div>
+                <div className="Web-tech">© WebPage private limited</div>
               </div>
             </div>
           </div>

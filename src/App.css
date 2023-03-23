@@ -389,6 +389,8 @@ input {
 }
 .team-img img {
   width: 70%;
+  border: 1px solid lightgray;
+  border-radius: 50%;
 }
 .teamImg-box {
   display: flex;
@@ -934,6 +936,7 @@ credit
   .platform-box-heading {
     font-size: 12px;
     font-weight: 600;
+    text-align: center;
   }
 
   .logo-box {
@@ -1022,3 +1025,6 @@ credit
   outline: none;
 } */
 /*teams end*/
+.style-img img {
+  background-color: white;
+}

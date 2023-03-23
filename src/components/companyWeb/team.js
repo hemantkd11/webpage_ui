@@ -63,7 +63,7 @@ import { Web_TEAM_IMG, Web_TEAM_SOCIAL_LOGO } from "../../IMAGE_CONSTANTS";
 //             <div className="team-member">
 //               <img src="./image.png" alt="team" />
 //             </div>
-//             <div className="member-name">Puneet Sharma</div>
+//             <div className="member-name">Hemant</div>
 //             <div className="social-site-logo">
 //               <div className="vector-in">
 //                 <TwitterIcon
@@ -83,7 +83,7 @@ import { Web_TEAM_IMG, Web_TEAM_SOCIAL_LOGO } from "../../IMAGE_CONSTANTS";
 //             <div className="team-member">
 //               <img src="./image.png" alt="team" />
 //             </div>
-//             <div className="member-name">Puneet Sharma</div>
+//             <div className="member-name">Hemant</div>
 //             <div className="social-site-logo">
 //               <div className="vector-in">
 //                 <TwitterIcon
@@ -103,7 +103,7 @@ import { Web_TEAM_IMG, Web_TEAM_SOCIAL_LOGO } from "../../IMAGE_CONSTANTS";
 //             <div className="team-member">
 //               <img src="./image.png" alt="team" />
 //             </div>
-//             <div className="member-name">Puneet Sharma</div>
+//             <div className="member-name">Hemant</div>
 //             <div className="social-site-logo">
 //               <div className="vector-in">
 //                 <TwitterIcon
@@ -140,7 +140,7 @@ const WebPageTeam = () => {
   return (
     <div className="team-container">
       <div className="team-main-box">
-        <div className="team-heading"> The WebPage Team</div>
+        <div className="team-heading"> WebPage User</div>
         <div className="team-img">
           <div className="teamImg-box">
             {Images.map((img, i) => (
@@ -148,9 +148,9 @@ const WebPageTeam = () => {
                 <div className="team-member" key={i}>
                   {img}
                 </div>
-                <div className="member-name">Puneet Sharma</div>
+                <div className="member-name">Hemant</div>
                 <div className="social-site-logo">
-                  <div className="vector-in">
+                  {/* <div className="vector-in">
                     <TwitterIcon
                       sx={{
                         width: "13px",
@@ -158,12 +158,12 @@ const WebPageTeam = () => {
                       }}
                     />
                   </div>
-                  <div className="vector-in">{icon}</div>
+                  <div className="vector-in">{icon}</div> */}
                 </div>
               </div>
             ))}
 
-            {/* <div className="member-name">Puneet Sharma</div>
+            {/* <div className="member-name">Hemant</div>
 //             <div className="social-site-logo">
 //               <div className="vector-in">
 //                 <TwitterIcon
@@ -181,7 +181,7 @@ const WebPageTeam = () => {
 //             <div className="team-member">
 //               <img src="./image.png" />
 //             </div>
-//             <div className="member-name">Puneet Sharma</div>
+//             <div className="member-name">Hemant</div>
 //             <div className="social-site-logo">
 //               <div className="vector-in">
 //                 <TwitterIcon
@@ -201,7 +201,7 @@ const WebPageTeam = () => {
 //             <div className="team-member">
 //               <img src="./image.png" />
 //             </div>
-//             <div className="member-name">Puneet Sharma</div>
+//             <div className="member-name">Hemant</div>
 //             <div className="social-site-logo">
 //               <div className="vector-in">
 //                 <TwitterIcon
@@ -221,7 +221,7 @@ const WebPageTeam = () => {
 //             <div className="team-member">
 //               <img src="./image.png" />
 //             </div>
-//             <div className="member-name">Puneet Sharma</div>
+//             <div className="member-name">Hemant</div>
 //             <div className="social-site-logo">
 //               <div className="vector-in">
 //                 <TwitterIcon
