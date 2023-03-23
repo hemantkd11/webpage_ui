@@ -85,12 +85,12 @@
   gap: 5px;
   line-height: 18px;
 }
-.vegapayment-solution {
+.WebPagement-solution {
   font-size: 12px;
   line-height: 20px;
 }
 @media only screen and (max-width: 800px) {
-  .vegapayment-solution {
+  .WebPagement-solution {
     font-size: 10px;
     line-height: 15px;
   }
@@ -98,7 +98,7 @@
     font-size: 8px;
   }
 }
-.vega-tech {
+.Web-tech {
   font-size: 15px;
   color: rgb(53, 51, 51);
   font-weight: 700;

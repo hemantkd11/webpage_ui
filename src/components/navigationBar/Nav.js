@@ -20,7 +20,7 @@ const Nav = () => {
         <div className="nav-list-box">
           <div className="nav-logo-box">
             <div className="logo" onClick={() => Navigate("./ui_webpage/")}>
-              VegaPay
+              WebPage
             </div>
           </div>
 

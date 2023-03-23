@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Grid } from "@mui/material";
-import VegaWorks from "./VegaWorks";
+import WebWorks from "./WebWorks";
 import Arrow from "@mui/icons-material/ArrowForwardIos";
 import CreditSuite from "./CreditSuite";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
@@ -9,10 +9,10 @@ import SlideShow from "../../slideShow/slide";
 import Sliders from "../../slideShow/Slider";
 // import { sliderData } from "./IMAGE_CONSTANTS";
 import {
-  VEGA_PLATFORM_HEADER,
-  VEGA_PLATFORM_SUB_HEADER,
-  VEGA_PLATFROM_BOXHEADER,
-  VEGA_PLATFROM_BOXTEXT,
+  Web_PLATFORM_HEADER,
+  Web_PLATFORM_SUB_HEADER,
+  Web_PLATFROM_BOXHEADER,
+  Web_PLATFROM_BOXTEXT,
   PLATFORM_TEMP1,
   PLATFORM_TEMPBODY1,
   PLATFORM_TEMP2,
@@ -29,12 +29,12 @@ import {
   CONTACT_INFO_TEXT,
 } from "../../APP_CONSTANTS_TEXT";
 import {
-  VEGA_PLATFORM_BANNER,
-  VEGA_PLATFORM_WORK,
+  Web_PLATFORM_BANNER,
+  Web_PLATFORM_WORK,
   sliderData,
 } from "../../IMAGE_CONSTANTS";
 
-const VegaPay = () => {
+const WebPage = () => {
   const { setModal } = useModal(false);
 
   return (
@@ -43,8 +43,8 @@ const VegaPay = () => {
         <div className="header-conatiner-box">
           <div className="container-box">
             <div className="text">
-              <div className="Header-text">{VEGA_PLATFORM_HEADER}</div>
-              <p className="text-body">{VEGA_PLATFORM_SUB_HEADER}</p>
+              <div className="Header-text">{Web_PLATFORM_HEADER}</div>
+              <p className="text-body">{Web_PLATFORM_SUB_HEADER}</p>
               <Button
                 sx={{
                   width: "150px",
@@ -68,39 +68,39 @@ const VegaPay = () => {
 
           <div className="container-box">
             <div className="mobile-logo">
-              <img src={VEGA_PLATFORM_BANNER} alt="Mobile logo" />
+              <img src={Web_PLATFORM_BANNER} alt="Mobile logo" />
             </div>
           </div>
         </div>
       </div>
-      <div className="VegaPay_platform">
-        <VegaPowerPlatform />
+      <div className="WebPage_platform">
+        <WebPowerPlatform />
       </div>
-      <div className="VegaCredit">
+      <div className="WebCredit">
         <CreditSuite />
       </div>
       <div className="slideShow_bo">
         <Sliders sliderData={sliderData} />
       </div>
-      <div className="Vegaworks">
-        <VegaWorks />
+      <div className="Webworks">
+        <WebWorks />
       </div>
-      <div className="VegaContact">
-        <VegaContactInfo />
+      <div className="WebContact">
+        <WebContactInfo />
       </div>
     </div>
   );
 };
-export default VegaPay;
+export default WebPage;
 
-const VegaPowerPlatform = () => {
+const WebPowerPlatform = () => {
   return (
     <div className="Platform-container">
       <div className="platform-box">
         <div className="platform_header">
-          <div className="text_header">{VEGA_PLATFROM_BOXHEADER}</div>
+          <div className="text_header">{Web_PLATFROM_BOXHEADER}</div>
 
-          <div className="text_body">{VEGA_PLATFROM_BOXTEXT}</div>
+          <div className="text_body">{Web_PLATFROM_BOXTEXT}</div>
         </div>
 
         <Grid
@@ -196,7 +196,7 @@ const VegaPowerPlatform = () => {
     </div>
   );
 };
-const VegaContactInfo = () => {
+const WebContactInfo = () => {
   return (
     <div className="contact-info">
       <div className="contact-box-temp">

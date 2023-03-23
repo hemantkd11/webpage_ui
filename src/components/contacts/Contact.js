@@ -56,7 +56,7 @@ const Contact = () => {
               placeholder="Write Message"
             />
           </div>
-          <div className="vegaSubmit_btn flex">
+          <div className="WebSubmit_btn flex">
             <button type="submit" className="Sign-in-btn">
               Submit
             </button>

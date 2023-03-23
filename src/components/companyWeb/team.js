@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import { VEGA_TEAM_IMG, VEGA_TEAM_SOCIAL_LOGO } from "../../IMAGE_CONSTANTS";
+import { Web_TEAM_IMG, Web_TEAM_SOCIAL_LOGO } from "../../IMAGE_CONSTANTS";
 
 // const Team = () => {
 //   const settings = {
@@ -127,20 +127,20 @@ import { VEGA_TEAM_IMG, VEGA_TEAM_SOCIAL_LOGO } from "../../IMAGE_CONSTANTS";
 
 // export default Team;
 
-const VegaPayTeam = () => {
+const WebPageTeam = () => {
   const Images = [
-    <img className="hide" src={VEGA_TEAM_IMG} />,
-    <img src={VEGA_TEAM_IMG} />,
-    <img src={VEGA_TEAM_IMG} />,
-    <img src={VEGA_TEAM_IMG} />,
+    <img className="hide" src={Web_TEAM_IMG} />,
+    <img src={Web_TEAM_IMG} />,
+    <img src={Web_TEAM_IMG} />,
+    <img src={Web_TEAM_IMG} />,
   ];
 
-  const icon = [<img src={VEGA_TEAM_SOCIAL_LOGO} />];
+  const icon = [<img src={Web_TEAM_SOCIAL_LOGO} />];
 
   return (
     <div className="team-container">
       <div className="team-main-box">
-        <div className="team-heading"> The VegaPay Team</div>
+        <div className="team-heading"> The WebPage Team</div>
         <div className="team-img">
           <div className="teamImg-box">
             {Images.map((img, i) => (
@@ -243,4 +243,4 @@ const VegaPayTeam = () => {
   );
 };
 
-export default VegaPayTeam;
+export default WebPageTeam;

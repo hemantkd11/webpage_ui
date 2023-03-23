@@ -3,19 +3,19 @@ import SlideShow from "../../slideShow/slide";
 import {
   COMPANY_HEADER,
   COMPANY_BANNER_TEXT,
-  VEGA_TEXTBOX_HEADER,
-  VEGA_TEXTBOX_BODY,
+  Web_TEXTBOX_HEADER,
+  Web_TEXTBOX_BODY,
 } from "../../APP_CONSTANTS_TEXT";
 import Sliders from "../../slideShow/Slider";
-import VegaPayTeam from "./team";
+import WebPageTeam from "./team";
 import {
-  VEGA_TEAM_IMG,
-  VEGA_TEAM_SOCIAL_LOGO,
+  Web_TEAM_IMG,
+  Web_TEAM_SOCIAL_LOGO,
   sliderData,
 } from "../../IMAGE_CONSTANTS";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Team from "./team";
-const VegaCompany = () => {
+const WebCompany = () => {
   return (
     <div className="Container">
       <div className="Header_Banner">
@@ -37,29 +37,29 @@ const VegaCompany = () => {
         </div>
       </div>
 
-      <div className="Vegacompany">
-        <VegaPayCompany />
+      <div className="Webcompany">
+        <WebPageCompany />
       </div>
       <div className="slideShow_box">
         <Sliders sliderData={sliderData} />
       </div>
       <div className="team_container">
-        <VegaPayTeam />
+        <WebPageTeam />
       </div>
     </div>
   );
 };
-export default VegaCompany;
-const VegaPayCompany = () => {
+export default WebCompany;
+const WebPageCompany = () => {
   return (
     <div className="container-company">
       <div className="company_header">
-        <div className="vegacompany-header">{VEGA_TEXTBOX_HEADER}</div>
+        <div className="Webcompany-header">{Web_TEXTBOX_HEADER}</div>
         <div className="company-text">
           <div className="text-logo">
             <img src="./symbol.png" style={{ width: "8vw" }} />
           </div>
-          <div className="Vega-company-text">{VEGA_TEXTBOX_BODY}</div>
+          <div className="Web-company-text">{Web_TEXTBOX_BODY}</div>
         </div>
       </div>
     </div>

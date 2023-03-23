@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ModalProvider from "./components/context/ModelProvider";
-import VegaModal from "./components/model/Model";
+import WebModal from "./components/model/Model";
 import ModalPage from "./components/context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

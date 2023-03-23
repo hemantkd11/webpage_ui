@@ -6,7 +6,7 @@ import React from "react";
 import useModal from "../context/ModelContext";
 import Checkbox from "@mui/material/Checkbox";
 
-const VegaModal = () => {
+const WebModal = () => {
   const { modal, setModal } = useModal();
   const { modaldata } = modal;
   const [checked, setChecked] = React.useState(false);
@@ -29,7 +29,7 @@ const VegaModal = () => {
         <div className="Model-container" onClick={(e) => e.stopPropagation()}>
           <div className="body-one">
             <div className="model-logo">
-              <img src="./VegaPay.png" />
+              <img src="./WebPage.png" />
             </div>
             <div className="sm_screen_cls_btn">
               <button
@@ -121,11 +121,11 @@ const VegaModal = () => {
                     onChange={handleChange}
                     sx={{ padding: "0px 3px 0px 0px" }}
                   />
-                  I hereby authorize and provide consebt to vegaPay to contact
+                  I hereby authorize and provide consebt to WebPage to contact
                   me via. Email,SMS or a Phone Call.
                 </p>
               </div>
-              <div className="vegaSubmit_btn flex">
+              <div className="WebSubmit_btn flex">
                 <button type="submit" className="Sign-in-btn">
                   Submit
                 </button>
@@ -137,4 +137,4 @@ const VegaModal = () => {
     </Modal>
   );
 };
-export default VegaModal;
+export default WebModal;

@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
 import Footer from "./components/footer/Footer";
-import VegaPay from "./components/VegaPlatform/VegaPay";
+import WebPage from "./components/WebPlatform/Webpage";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import VegaCompany from "./components/companyVega/CompanyVega";
+import WebCompany from "./components/companyWeb/CompanyPage";
 import Contact from "./components/contacts/Contact";
-import VegaModel from "./components/model/Model";
+import WebModel from "./components/model/Model";
 
 import Nav from "./components/navigationBar/Nav";
 import SlideShow from "./slideShow/slide";
@@ -15,12 +15,11 @@ function App() {
     <div>
       <Router>
         <Nav />
-
         <Routes>
-          <Route path="/ui_webpage/" element={<VegaPay />} />
-          <Route path="/ui_webpage/aboutcompany" element={<VegaCompany />} />
-          <Route path="/ui_webpage/contact" element={<Contact />} />
-          <Route path="/ui_webpage/modal" element={<VegaModel />} />
+          <Route path="/webpage_ui/" element={<WebPage />} />
+          <Route path="/webpage_ui/aboutcompany" element={<WebCompany />} />
+          <Route path="/webpage_ui/contact" element={<Contact />} />
+          <Route path="/webpage_ui/modal" element={<WebModel />} />
           <Route path="/slide" element={<SlideShow />}></Route>
         </Routes>
         <Footer />

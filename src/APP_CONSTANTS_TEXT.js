@@ -1,24 +1,24 @@
-export const COMPANY_HEADER = ` VegaPay is a financial technology company born out of disruption
+export const COMPANY_HEADER = ` WebPay is a financial technology company born out of disruption
                 and built for speed.`;
 export const COMPANY_BANNER_TEXT = ` We partner with banks and financial institutions to rapidly
                 digitize their financial infrastructure and optimize growth
                 opportunities in the modern world of banking.`;
-export const VEGA_TEXTBOX_HEADER = `Vision and Mission`;
-export const VEGA_TEXTBOX_BODY = ` VegaPay provides you with a comprehensive credit suite featuring a
+export const Web_TEXTBOX_HEADER = `Vision and Mission`;
+export const Web_TEXTBOX_BODY = ` WebPay provides you with a comprehensive credit suite featuring a
             wide breadth of modules and no-code configuration to design, deploy,
-            and direct your credit programs. VegaPay provides you with a
+            and direct your credit programs. WebPay provides you with a
             comprehensive credit suite featuring a wide breadth of modules and
             no-code configuration to design, deploy, and direct your credit
-            programs. VegaPay provides you with a comprehensive credit suite
+            programs. WebPay provides you with a comprehensive credit suite
             featuring a wide breadth of modules and no-code configuration to
             design, deploy, and direct your credit programs.`;
 
-export const VEGA_PLATFORM_HEADER = ` Launch digital-first credit programs in less than 7 days`;
-export const VEGA_PLATFORM_SUB_HEADER = `      Integrate with a pre-build LOS, LMS, payouts and more with
-              VegaPay's all-in-one cradit suite`;
+export const Web_PLATFORM_HEADER = ` Launch digital-first credit programs in less than 7 days`;
+export const Web_PLATFORM_SUB_HEADER = `      Integrate with a pre-build LOS, LMS, payouts and more with
+              WebPay's all-in-one cradit suite`;
 
-export const VEGA_PLATFROM_BOXHEADER = `The power of our Platform`;
-export const VEGA_PLATFROM_BOXTEXT = `We Put the power in our partners hands with out flexible and
+export const Web_PLATFROM_BOXHEADER = `The power of our Platform`;
+export const Web_PLATFROM_BOXTEXT = `We Put the power in our partners hands with out flexible and
             intuitive platform. Each highly-configurable module orchestrates an
             end-to-end experience for your bank and your coustomers`;
 
@@ -49,7 +49,7 @@ export const PLATFORM_TEMPBODY6 = `Navigate a network of curated data sources in
 export const CONTACT_INFO_HEADER = `Contact Us`;
 export const CONTACT_INFO_TEXT = ` Launch next gen credit programs in less than 7 days`;
 
-export const VEGA_WROK_TEXT = `  VegaPay provides you with a comprehensive credit suite featuring a
+export const Web_WROK_TEXT = `  WebPay provides you with a comprehensive credit suite featuring a
           wide breadth of modules and no-code configuration to design, deploy,
           and direct your credit programs.`;
-export const VEGA_WORK_HEADER = `How VegaPay works ?`;
+export const Web_WORK_HEADER = `How WebPay works ?`;
