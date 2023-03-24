@@ -2,7 +2,7 @@ export const Web_TEAM_IMG = `https://w7.pngwing.com/pngs/81/570/png-transparent-
 
 export const Web_TEAM_SOCIAL_LOGO = `./VectorIn.png`;
 
-export const Web_PLATFORM_BANNER = `./NetApp.png`;
+export const Web_PLATFORM_BANNER = `./mobile_logo.svg`;
 export const Web_PLATFORM_WORK_IMG = `./howWebWork-img.png`;
 export const Web_COMPANY_BANNER = `./mobile-logo2.png`;
 
