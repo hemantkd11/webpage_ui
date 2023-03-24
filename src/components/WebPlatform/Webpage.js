@@ -68,7 +68,7 @@ const WebPage = () => {
 
           <div className="container-box">
             <div className="mobile-logo">
-              <img src="/mobile-logo.svg" alt="Mobile logo" />
+              <img src={Web_PLATFORM_BANNER} alt="Mobile logo" />
             </div>
           </div>
         </div>
