@@ -29,7 +29,7 @@ const WebModal = () => {
         <div className="Model-container" onClick={(e) => e.stopPropagation()}>
           <div className="body-one">
             <div className="model-logo">
-              <img src="./WebPage.png" />
+              <h1>WebPage</h1>
             </div>
             <div className="sm_screen_cls_btn">
               <button
